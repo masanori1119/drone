@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>ベストドローンスクール</title>
+  </head>
+<body>
+  <div class ="contens-hokkaido">
+       <span class ="moji-hokkaido">
+       <h1>ドローンコラム</h1>
+       </span>
+  </div>
+
+<div class="paginate">
+<%= paginate(@categori) %>
+</div>
+
+
+<div class="colom-body">
+  <div class="colom-navba">
+   <p class="colom-categori">
+   カテゴリー
+   </p>
+   <p id="hidari" class="colom-categori-moji" >
+   <a href="/columns/categori_1/#categori1" class="a-colom">
+  ・ドローン基礎知識
+  </a>
+   </p>
+   <p id="migi" class="colom-categori-moji">
+   <a href="/columns/categori_2/#categori2" class="a-colom">
+   ・ドローンスクールの基礎知識
+   </a>
+   </p>
+  </div>
+<!-- 最新の投稿順 -->
+<div class="hidari" id="categori1">
+        <% @categori.each do |column| %>
+              <div class="colom-contens">
+                  <h1 class="colom-contens-moji1">
+                  <%= column.title %>
+                  </h1>
+                  <% if column.categori_1 == "ドローン基礎知識" %>
+                  <p class ="colom-kategori">
+                  <a href="/columns/categori_1/#categori1" class="a-colom">
+                  Categories: <%= column.categori_1 %>
+                  </a>
+                  </p>
+                  <% else %>
+                  <p class ="colom-kategori">
+                  <a href="/columns/categori_2/#categori2" class="a-colom">
+                  Categories: <%= column.categori_2 %>
+                  </a>
+                  </p>
+                  <% end %>
+                  <img src="/assets/columns/<%= column.image %>" class="colom-image">
+                   <p class="colom-contens-moji2">
+                   <%= column.text %>
+                   </p>
+                   <% if column.id == 1 %>
+                   <a href="/columns/colum1" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 2 %>
+                   <a href="/columns/colum2" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 3 %>
+                   <a href="/columns/colum3" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 4 %>
+                   <a href="/columns/colum4" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 5 %>
+                   <a href="/columns/colum5" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 6 %>
+                   <a href="/columns/colum6" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 7 %>
+                   <a href="/columns/colum7" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 8 %>
+                   <a href="/columns/colum8" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 9 %>
+                   <a href="/columns/colum9" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 10 %>
+                   <a href="/columns/colum10" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 11 %>
+                   <a href="/columns/colum11" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 12 %>
+                   <a href="/columns/colum12" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 13 %>
+                   <a href="/columns/colum13" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 14 %>
+                   <a href="/columns/colum14" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+                   <% if column.id == 15 %>
+                   <a href="/columns/colum15" class="colom-tuzuki">続きをみる</a>
+                   <% end %>
+              </div>
+       <% end %>
+
+</div>
+
+<div class="paginate">
+<%= paginate(@categori) %>
+</div>
+
+<footer class=lineman>
+</footer>
+</body>

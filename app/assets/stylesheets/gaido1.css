@@ -1,0 +1,117 @@
+.gaido-main{
+    /*height: 6800px;*/
+    margin-bottom: 30px;
+}
+
+.gaido-contens {
+    padding: 30px 1em;
+    margin: 2em 0;
+    border: double 5px gray;
+    /*height: 6500px;*/
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: white;
+    /* text-align: center; */
+}
+
+.img-gaido {
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+/*タイトル文字*/
+.gaido-contens-moji1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: whitesmoke;
+    border-left: solid 10px grey;
+}
+
+/*文章*/
+.gaido-contens-moji2 {
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+}
+
+/*中文字*/
+.gaido-contens-moji5 {
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/*大文字*/
+.gaido-contens-moji3 {
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 0px;
+    line-height: 80px;
+}
+
+.gaido-contens-moji333 {
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 0px;
+    line-height: 80px;
+    margin-top: 500px;
+}
+
+
+
+/*リンク先*/
+.gaido-contens-moji4 {
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+    line-height: 100px;
+    text-align: right;
+}
+
+.colom-komoji{
+    padding-top: 0px;
+    color:gray;
+}
+
+/*youtube の位置調整*/
+.youtube-center{
+    text-align: center;
+    margin: 40px;
+}
+
+.lineman{
+    background-color: #69b21d;
+    height: 150px;
+    /* margin: 10px 50px 10px 0px; */
+    border-radius: 5px;
+    height: 50px;
+}
+
+@media screen and (max-width: 479px)
+
+{
+.gaido-contens {
+    padding: 30px 1em;
+    margin: 2em 0;
+    border: double 5px gray;
+    height: 6500px;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: white;
+    /* text-align: center; */
+}
+
+}

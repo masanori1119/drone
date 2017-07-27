@@ -1,0 +1,81 @@
+.inner-hokkaido2 {
+    background-color: #007bbb;
+    height: 100px;
+    width: 800px;
+    margin: 30px 50px 10px 320px;
+    border-radius: 10px;
+}
+
+.ul-narabikae{
+    margin: 0px;
+    width: 100%;
+    height: 100%
+}
+
+
+.inner-hokkaido2 li{
+    position: relative;
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 26px 0px 0px 20px;
+    border: 2px solid #007bbb;
+    color: #007bbb;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.inner-hokkaido2 li.selected {
+  background-color: #fff;
+  color: #AECD6A;
+}
+
+.li-narabikae2{
+    position: relative;
+    width: 150px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 70px 0px 0px 20px;
+    border: 2px solid #007bbb;
+    color: #007bbb;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.li-narabikae3{
+    position: relative;
+    width: 150px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 70px 0px 0px 20px;
+    border: 2px solid #007bbb;
+    color: #007bbb;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.inner-seach {
+    background-color: #69b21d;
+    height: 70px;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+.seach-itiran {
+    margin: 0 auto;
+    width: 800px;
+    height: 1400px;
+    padding: 0px;
+    background-color: white;
+}

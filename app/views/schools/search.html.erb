@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>ベストドローンスクール</title>
+  </head>
+<body>
+  <div class ="contens-hokkaido">
+       <span class ="moji-hokkaido">
+       <h1>検索結果</h1>
+       </span>
+  </div>
+  <div class="contens-hokkaido2">
+    <div class="inner-seach">
+    <h3 class="inner-moji">学校数：<%= @drone.count %> 件</h3>
+    </div>
+
+<div class="paginate">
+<%= paginate(@drone) %>
+</div>
+
+<div class="java-taiou">
+ <div class="hidari">
+    <ul class="seach-itiran" style="list-style:none;">
+    <% @drone.each do |school| %>
+      <li class="hokkaido">
+      <img src="/assets/drone/<%= school.image %>" class="hokkaido-gazo">
+       <a href="/schools/<%= school.id %>" class="hokkaido-link"><h5 class="hokkaido-moji"><%= school.name %></h5></a>
+<!-- 以下、平均点表示 -->
+<% if school.reviews.present? %>
+       <span class="wrap"><i class="rate rate<%= school.reviews.average(:rate).round %>"></i></span>
+       <span class="inner-hyouka1"><%= school.reviews.average(:rate).round %>点</span><br>
+       <span class="inner-hyouka2"><%= school.reviews.count(:rate) %>件</span><br>
+ <% else %>
+       <span class="wrap"><i class="rate rate0"></i></span>
+        <span class="inner-hyouka2">口コミ：<%= school.reviews.count(:rate) %>件</span>
+<% end %>
+
+<ul style="list-style:none;">
+   <% if school.license == "操縦" %>
+       <a href="/schools/license/"><li class="botanman"><%= school.license %></li></a>
+   <% else %>
+      <li class="license-none"></li>
+   <% end %>
+
+   <% if school.license_2 == "運行管理" %>
+       <a href="/schools/license_2/" ><li class="botanman"><%= school.license_2 %></li>
+   <% else %>
+       <li class="license-none"></li>
+   <% end %>
+
+   <% if school.license_3 == "空撮" %>
+       <a href="/schools/license_3/" ><li class="botanman"><%= school.license_3 %></li>
+   <% else %>
+      <li class="license-none"></li>
+   <% end %>
+
+   <% if school.license_4 == "測量" %>
+       <a href="/schools/license_4/" ><li class="botanman"><%= school.license_4 %></li>
+   <% else %>
+      <li class="license-none"></li>
+   <% end %>
+
+   <% if school.license_5 == "農業" %>
+       <a href="/schools/license_5/" ><li class="botanman"><%= school.license_5 %></li>
+   <% else %>
+      <li class="license-none"></li>
+   <% end %>
+
+   </ul>
+     </li>
+<% end %>
+    </ul>
+ </div>
+
+
+
+
+<div class="migi">
+ </div>
+
+
+</div>
+
+<div class="paginate">
+<%= paginate(@drone) %>
+</div>
+
+<footer class=lineman>
+</footer>
+</body>

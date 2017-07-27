@@ -1,0 +1,87 @@
+.ranking-moji {
+    text-align: center;
+    font-size: 18px;
+    padding: 0px;
+}
+
+.zenkoku1 {
+    background-color: #69b21d;
+    height: 70px;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+.zenkoku-ranking1{
+    margin: auto;
+    height: 140px;
+    width: 850px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.zenkoku-ranking2{
+    margin: auto;
+    height: 140px;
+    width: 850px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.zenkoku-ranking3{
+    margin: auto;
+    height: 140px;
+    width: 850px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.p-1111111{
+color:red;
+}
+
+@media screen and (max-width: 479px)
+
+{
+.zenkoku1 {
+    background-color: #69b21d;
+    height: 70px;
+    /* width: 100%; */
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.zenkoku-ranking3 {
+    margin: auto;
+    height: 140px;
+    width: 850px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+li-tiiki {
+    position: relative;
+    width: 120px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    float: left;
+    margin: 10px;
+    color: #69b21d;
+    display: block;
+}
+
+.moji-hokkaido {
+    display: inline-block;
+    margin: 40px 50px 50px 130px;
+    padding: 5px 10px;
+    color: #69b21d;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+}

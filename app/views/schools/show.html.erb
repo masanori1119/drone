@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>ベストドローンスクール</title>
+  </head>
+<body>
+<div class ="line-line">
+</div>
+<div class="main-gazo">
+<img src="/assets/drone/<%= @drone.image %>" class="top-gazo">
+</div>
+
+<div class="school-annai">
+
+<h2 class="syousai clearfix">学校の詳細情報</h2>
+    <table class="table-main">
+    <tbody>
+      <tr>
+          <th scope="row">学校名</th>
+          <td><%= @drone.name %></td>
+      </tr>
+      <tr>
+          <th scope="row">運営者</th>
+          <td><%= @drone.company %></td>
+      </tr>
+      <tr>
+          <th scope="row">所在地</th>
+          <td><%= @drone.address %></td>
+      </tr>
+       <tr>
+          <th scope="row">講座</th>
+          <td><%= @drone.curriculum %></td>
+      </tr>
+      <tr>
+          <th scope="row">認可組織</th>
+          <td><%= @drone.group %></td>
+      </tr>
+      <tr>
+          <th scope="row">特徴</th>
+          <td><%= @drone.point %></td>
+      </tr>
+      <tr>
+          <th scope="row">ホームページ</th>
+          <td><a href="<%= @drone.other %>">ホームページ</a></td>
+      </tr>
+    </tbody>
+    </table>
+
+</div>
+<div class="kuchikomi-itiran">
+      <h2 class="syousai clearfix">学校の口コミ</h2>
+   <ul class="hyouka-kotei" style="list-style:none;">
+     <li class="11111">
+     <% @schools.each do |drone| %>
+     <% if drone.reviews.present? %>
+        <span class="wrap"><i class="rate rate<%= drone.reviews.average(:rate).round %>"></i></span>
+        <span class="kuchikomi-hyouka"><%= drone.reviews.average(:rate).round(1) %>点</span>
+        <span class="kuchikomi-kensuu"><%= drone.reviews.count(:rate) %>件</span>
+     <% else %>
+        <span class="wrap"><i class="rate rate0"></i></span>
+        <span class="kuchikomi-kensuu"><%= drone.reviews.count(:rate) %>件</span>
+     <% end %>
+     <% end %>
+     </li>
+
+<!-- 地図 -->
+<% @map.each do |map| %>
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+  <style type="text/css">
+    #map { height: 400px;
+   margin-left:auto;    /* 左側マージンを自動的に空ける */
+   margin-right:auto;   /* 右側マージンを自動的に空ける */
+   text-align:left;     /* 中身を左側表示に戻す */
+   width: 50%;}
+  </style>
+  <div id="map"></div>
+
+
+
+<script type="text/javascript">
+function initMap() {
+
+  var test ={lat: <%= map.latitude %>, lng: <%= map.longitude %>};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: test
+  });
+  var transitLayer = new google.maps.TransitLayer();
+  transitLayer.setMap(map);
+
+  var contentString = '住所：<%= map.address %>';
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position:test,
+    map: map,
+    title: contentString
+  });
+
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+}
+
+ </script>
+ <script async defer
+   src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCoIkLIk5X9ZFJ-IzmrR5PutqckX-6Ve5g&callback=initMap">
+ </script>
+<!-- ここまで -->
+
+
+     <li>
+       <span id="slide" class=""><a href="/schools/<%=@drone.id %>/reviews/new">口コミを投稿する</a></span>
+     </li>
+   </ul>
+<div  class="" id="target">
+<!-- 投稿機能 -->
+<!-- 投稿機能ここまで -->
+</div>
+
+ <ul class="bokeboushi" style="list-style:none;">
+  <% @comments.each do |review| %>
+  <% if review.public? %>
+  <li>
+    <span class="wrap"><i class="rate rate<%= review.rate.round %>"></i></span>
+    <span class="kuchikomi-hyouka"><%= review.rate.round %>点</span>
+  </li>
+  <li>
+    <span class="kuchikomi-moji111">投稿者</span>
+    <span class="kuchikomi-moji"><%= review.nickname %></span>
+  <li>
+  <li> 
+    <span class="kuchikomi-moji111">立場</span>
+    <span class="kuchikomi-moji"><%= review.Position %></span>
+  </li>
+    <span class="kuchikomi-moji111">良かったところ</span>
+  <li>
+    <p class="good-point">
+    <%= review.good %>
+    </p>
+    <span class="kuchikomi-moji111">悪かったところ・改善して欲しいところ</span>
+  </li>
+  <li>
+    <p class="bad-point">
+    <%= review.bad %>
+    </p>
+</li>
+<% end %>
+<% end %>
+</ul>
+</div>
+
+
+<footer>
+</footer>
+</body>

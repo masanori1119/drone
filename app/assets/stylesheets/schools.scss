@@ -1,0 +1,664 @@
+// Place all the styles related to the schools controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+//レート評価 変数
+$starFull: 16px;//星1個の幅
+$starHalf: $starFull / 2;//星半分（0.5）の幅
+
+$rate1: $starHalf;//星0.5
+$rate2: $starFull;//星1
+$rate3: $starFull + $starHalf;//星1.5
+$rate4: $starFull * 2;//星2
+$rate5: ($starFull * 2) + $starHalf;//星2.5
+$rate6: $starFull * 3;//星3
+$rate7: ($starFull * 3) + $starHalf;//星3.5
+$rate8: $starFull * 4;//星4
+$rate9: ($starFull * 4) + $starHalf;//星4.5
+$rate10 :$starFull * 5;//星5
+
+.rate{
+  position: relative;
+  display: inline-block;
+  width: $starFull * 5;
+  height: $starFull;
+  font-size: $starFull;
+  &:before,&:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '★★★★★';
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+  }
+  &:before{
+  color: #ddd;
+  }
+  &:after{
+  color: #ffa500;
+  overflow: hidden;
+  white-space: nowrap;//これがないと改行されて星の半分（0.5）が表現できなくなる
+  }
+}
+.rate0:after{//星0
+  width: 0;
+}
+.rate1:after{//星0
+  width: $rate1;
+}
+.rate2:after{//星1
+  width: $rate2;
+}
+.rate3:after{//星1.5
+  width: $rate3;
+}
+.rate4:after{//星2
+  width: $rate4;
+}
+.rate5:after{//星2.5
+  width: $rate5;
+}
+.rate6:after{//星3
+  width: $rate6;
+}
+.rate7:after{//星3.5
+  width: $rate7;
+}
+.rate8:after{//星4
+  width: $rate8;
+}
+.rate9:after{//星4.5
+  width: $rate9;
+}
+.rate10:after{//星5
+  width: $rate10;
+}
+
+
+.wrap{
+  width: 80px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color:white;
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 1040px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+a.irokotei {
+  color : #69b21d;
+}
+
+a {
+  text-decoration: none;
+  color: #69b21d;
+}
+
+header {
+    height: 500px;
+    text-align: center;
+    background-color: #f6f5f6;
+}
+
+.navbar {
+    height: 120px;
+    margin: 0 auto;
+    background-color: #f6f5f6;
+}
+
+.kensaku{
+    margin: auto;
+    height: 120px;
+    width: 1000px;
+    padding-left: 0;
+    overflow: hidden;;
+}
+
+.kensaku1{
+    width: 380px;
+    margin: 26px 4px 0px 0px;
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
+    color: grey;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 100;
+    border: 5px solid #69b21d;
+    float: left;
+}
+
+.kensaku2{
+    width: 280px;
+    margin: 33px 4px 0px 0px;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 0;
+    color: gray;
+    border: 5px solid #69b21d;
+    float: left;
+}
+
+.batubatu{
+    font-size: 30px;
+    margin: 36px 20px 0px 20px;
+    float: left;
+}
+
+.kensaku-botan{
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #696969;
+    margin: 34px 15px 0px 30px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    height: 50px;
+    font-size: 22px;
+}
+
+.img-main{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.contents {
+  background-color: #C0C0C0;
+  width: 960px;
+  margin: 10px auto;
+}
+
+.left-content {
+  height: 450px;
+  background-color: white;
+
+}
+
+.center-content {
+  height: 450px;
+  background-color: #f6f5f6;
+
+}
+
+.center-content2 {
+  height: 400px;
+  background-color: #f6f5f6;
+}
+
+.right-content {
+  height: 300px;
+  background-color: #f8f4e6;
+}
+
+.botom-content {
+  height: 370px;
+  background-color: #f8f4e6;
+}
+
+footer {
+  background-color: white;
+  height:100px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+
+//固定部分 
+.kotei {
+    background-color: white;
+    height: 100px;
+    margin: 0px;
+}
+
+   .ul-kotei {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+
+.li-kotei{
+    position: relative;
+    width: 150px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 40px 15px 0px 15px;
+    border: 2px solid #00c300;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.li-kotei:hover{
+    position: relative;
+    width: 150px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #00c300;
+    float: left;
+    margin: 40px 15px 0px 15px;
+    border: 2px solid #00c300;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.img-kotei{
+    float: left;
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    width: 300px;
+    height: auto;
+    margin: 30px 40px 20px 30px;
+}
+
+//最新投稿
+
+.ul-ranking1 {
+    margin: auto;
+    height: 400px;
+    width: 1060px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.li-toukou {
+    position: relative;
+    width: 260px;
+    padding: 20px;
+    border: 5px solid #dadada;
+    border-radius: 20px;
+    background-color: #fff;
+    float: left;
+    margin: 20px;
+}
+
+.ranking-tuzuki{
+    position: relative;
+    width: 250px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #ffa500;
+    /* margin: 40px 15px 0px 15px; */
+    border: 2px solid gold;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: auto;
+}
+
+.toukoubi{
+  margin-left: 0px;
+}
+
+.toukousya{
+  margin-left: 0px;
+}
+
+.hyouka{
+  margin-left: 0px;
+}
+
+.ranking-gazo1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+//学校ランキング
+
+
+.p-link {
+color: black
+}
+
+a.ranking {
+  color : white;
+}
+
+.li-ranking {
+    position: relative;
+    width: 250px;
+    padding: 20px;
+    border: 5px solid #dadada;
+    border-radius: 20px;
+    background-color: #fff;
+    float: left;
+    margin: 20px;
+}
+
+.ul-ranking2 {
+    margin: auto;
+    height: 300px;
+    width: 1050px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.ranking-gazo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ranking-title {
+    text-align: center;
+    font-size: 16px;
+    padding: 0px;
+}
+
+.ranking-star{
+    font-size: 14px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.li-ranking{
+    text-align: right;
+}
+
+.ranking-ten{
+    margin: 10px;
+    font-size: 18px;
+    color: red;
+}
+
+.ranking-kutikomi{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    color: #696969;
+}
+
+.h3-ranking{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+//地域別
+
+.tiiki-moji {
+    text-align: center;
+    font-size: 22px;
+    padding: 0px;
+}
+
+.li-tiiki {
+    position: relative;
+    width: 120px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    float: left;
+    margin: 10px;
+    color: #69b21d;
+    display: block;
+}
+
+.li-tiiki:hover{
+    position: relative;
+    width: 120px;
+    padding: 10px;
+    border: 2px solid #badcad;
+    border-radius: 10px;
+    background-color: #badcad;
+    float: left;
+    margin: 10px;
+    color: #69b21d;
+}
+
+.ul-ranking3{
+    margin: auto;
+    height: 140px;
+    width: 1350px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+
+//学べるもの
+
+.ul-ranking4{
+    margin: auto;
+    height: 140px;
+    width: 820px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.copy-right{
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 479px)
+
+{
+
+.li-kotei {
+    width: 7%;
+    padding: 5px 10px 10px 10px;
+    height: 30px;
+    margin: 30px 5px 0px 0px;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+}
+
+.li-kotei:hover{
+    width: 7%;
+    padding: 5px 10px 10px 10px;
+    height: 30px;
+    margin: 30px 5px 0px 0px;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ul-kotei {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    vertical-align: middle;
+    /* display: table-cell; */
+    /* text-align: center; */
+}
+
+.kotei {
+    background-color: white;
+    height: 100px;
+    margin: 0px;
+}
+
+
+
+/*index*/
+
+.ul-ranking3 {
+    margin: 0 auto;
+    height: 300px;
+    width: 700px;
+    padding-left: 0;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ul-ranking2 {
+    margin: auto;
+    height: 300px;
+    width: 940px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.li-ranking {
+    position: relative;
+    width: 290px;
+    padding: 20px 5px 5px 5px;
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 5px 0px 0px;
+}
+
+.ranking-tuzuki {
+    position: relative;
+    width: 250px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #ffa500;
+    /* margin: 40px 15px 0px 15px; */
+    border: 2px solid gold;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 750px;
+}
+
+.li-toukou {
+    position: relative;
+    width: 260px;
+    padding: 20px;
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 5px 0px 5px;
+}
+
+.ul-ranking1 {
+    margin: auto;
+    height: 350px;
+    width: 950px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.kensaku {
+    margin: auto;
+    height: 120px;
+    width: 880px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.kensaku1 {
+    width: 300px;
+    margin: 26px 4px 0px 0px;
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
+    color: grey;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 100;
+    border: 5px solid #69b21d;
+    float: left;
+
+}
+
+.kensaku2 {
+    width: 250px;
+    margin: 33px 4px 0px 0px;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 0;
+    color: gray;
+    border: 5px solid #69b21d;
+    float: left;
+}
+
+header {
+    height: 300px;
+    text-align: center;
+    background-color: #f6f5f6;
+    /* width: 1000px; */
+}
+
+.img-main {
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* height: auto; */
+}
+
+.right-content {
+    height: 450px;
+    background-color: #f8f4e6;
+}
+
+}
+
+
+
+
+

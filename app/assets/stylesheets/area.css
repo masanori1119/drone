@@ -1,0 +1,139 @@
+.contens-hokkaido {
+    background-color: #69b21d;
+    height: 150px;
+    /* margin: 10px 50px 10px 0px; */
+    border-radius: 5px;
+}
+
+.moji-hokkaido{
+    display: inline-block;
+    margin: 40px 50px 50px 320px;
+    padding: 5px 10px;
+    color: #69b21d;
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+}
+
+.contens-hokkaido2 {
+  background-color: white;
+}
+
+.inner-hokkaido {
+    background-color: #69b21d;
+    height: 70px;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.hokkaido-itiran{
+    margin: 0 auto;
+    width: 800px;
+    height: 1400px;
+    padding: 0px;
+    background-color: white;
+}
+
+.hokkaido {
+    position: relative;
+    width: 700px;
+    padding: 20px;
+    border: 3px solid #00c300;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 10px 10px 25px;
+    /* height: 150px; */
+}
+
+.hokkaido-gazo{
+    width: 200px;
+    /* height: 150px; */
+    float: left;
+    margin-right: 20px;
+}
+
+.inner-moji{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    font-weight: 100;
+}
+
+.hokkaido-moji{
+    font-size: 24px;
+    padding: 0px;
+    color: green;
+  }
+
+.hokkaido-link{
+  text-decoration:none;
+}
+
+.inner-hyouka{
+  font-size: 20px;
+  color: gold;
+}
+
+.inner-hyouka1{
+  font-size: 20px;
+  color: red;
+  font-weight: bolder;
+}
+
+.inner-hyouka2{
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.botanman{
+    font-size: 15px;
+    margin: 7px 10px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    background: green;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+.paginate {
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+
+@media screen and (max-width: 479px)
+
+{
+.hokkaido {
+    position: relative;
+    width: 700px;
+    padding: 20px;
+    border: 3px solid #00c300;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 10px 10px 25px;
+    height: 150px;
+    /* margin: 0 auto; */
+}
+
+.hokkaido-itiran{
+    width: 800px;
+    height: 1400px;
+    padding: 0px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.inner-hokkaido {
+    background-color: #69b21d;
+    height: 70px;
+    width: 100%;
+    margin: 30px 50px 10px 0px;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,40 @@
+
+
+<div class ="contens-toukou1">
+  <div class="contens-toukou2">
+       <span class ="contens-toukou3">
+       <h1>お問い合わせフォーム</h1>
+       </span>
+  </div>
+</div>
+
+
+<!-- 投稿機能 -->
+ <div  class="komento-box">
+         <%=form_tag('/schools/mail_send', method: :post) do %>
+          <div class="komento-folder">
+           <p class="mail-moji">名前(必須）</p>
+            <input type="text" name="name" placeholder="お名前をご入力ください" class="komento-nickname">
+          </div>
+
+          <div class="komento-folder">
+           <p class="mail-moji">メールアドレス（必須）</p>
+            <input type="email" name="email" placeholder="メールアドレスをご入力ください" class="komento-nickname">
+          </div>
+
+
+
+          <div class="komento-folder">
+          <p class="mail-moji">問い合わせ内容（必須）
+          <textarea name="text" rows="4" cols="40" placeholder="内容をご入力ください" class="komento-good"></textarea></p>
+          </div>
+
+         <input type="checkbox">確認画面が表示されませんので、内容をご確認頂き問題がないようでしたら、チェックの上、送信ボタンを押してください。
+
+         <p><input type="submit" value="送信"></p>
+         <% end %>
+</div>
+<!-- 投稿機能 ここまで -->
+
+<footer class=lineman>
+</footer>

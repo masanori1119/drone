@@ -1,0 +1,84 @@
+.contens-toukou1{
+    background-color: #69b21d;
+    height: 90px;
+    /* margin: 10px 50px 10px 0px; */
+    border-radius: 5px;
+}
+
+.contens-toukou2{
+    width: 770px;
+    margin: 0 auto;
+}
+
+.contens-toukou3 {
+    display: inline-block;
+    margin: 16px 0px 50px 0px;
+    color: #69b21d;
+    border-radius: 10px;
+    width: 780px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.komento-box{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.komento-folder{
+   margin: 15px 0;
+   width: 500px
+}
+
+.komento-nickname{
+ width: 300px;
+ height: 30px;
+}
+
+.komento-rate{
+ width: 50px;
+ height: 30px;
+}
+
+
+.komento-good{
+    width: 500px;
+    height: 300px;
+}
+
+.komento-bad{
+    width: 500px;
+    height: 300px;
+}
+
+.mail-moji{
+font-weight: 700;
+font-size: 16px;
+}
+
+
+
+
+
+/*送信完了時に表示*/
+
+.mail-box{
+width: 1750px;
+}
+
+.mail-finish {
+    position: relative;
+    width: 300px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #00c300;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mail-finish-moji{
+    font-size: 22px
+}

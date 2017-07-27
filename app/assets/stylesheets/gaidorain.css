@@ -1,0 +1,91 @@
+.gaidrain-main{
+height: 1700px
+}
+
+.gaidorain-contens{
+    margin: 2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px #69b21d;
+    border-radius: 3px 0 3px 0;
+    height: 1500px;
+    width: 1000px;
+    margin: 100px auto;
+}
+
+
+.gaidorain-contens:before,.gaidorain-contens:after
+{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: solid 2px #69b21d;
+    border-radius: 50%;
+}
+
+.gaidorain-contens:after {
+    top: -16px;
+    left: -12px;
+}
+.gaidorain-contens:before {
+    bottom: -12px;
+    right: -16px;
+}
+
+
+/*タイトル文字*/
+.gaidorain-contens-moji3 {
+    font-size: 18px;
+    margin-top: 60px;
+    padding: 0px;
+}
+
+/*赤文字 文章*/
+.gaidorain-contens-moji4 {
+    font-size: 18px;
+    color: red;
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+/*大文字*/
+.gaidorain-contens-moji5 {
+    color: red;
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.lineman{
+    background-color: #69b21d;
+    height: 150px;
+    /* margin: 10px 50px 10px 0px; */
+    border-radius: 5px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 479px)
+
+{
+.gaidorain-contens {
+    margin: 2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px #69b21d;
+    border-radius: 3px 0 3px 0;
+    height: 1500px;
+    width: 800px;
+    /* margin: 100px auto; */
+    background-color: white;
+}
+
+.gaidorain-main {
+    width: 900px;
+    margin: 0 auto;
+}
+
+}

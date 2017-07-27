@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+<!-- ビューポートの設定 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+
+<div class="kotei">
+<a href="/"><%= image_tag 'logo.png', class: "img-kotei" , :width => "300",:height => "100" %></a>
+
+
+<ul class ="ul-kotei" style="list-style:none;">
+
+  <%= link_to "地域から探す", "/schools/zenkoku#page_school", class: "li-kotei" %>
+  <%= link_to "学習内容から探す", "/#page_link1", class: "li-kotei" %>
+
+ <%= link_to "学校選び初めてガイド", "/schools/hajimete", class: "li-kotei" %>
+
+  <%= link_to "口コミの投稿について", "/schools/gaidorain", class: "li-kotei" %>
+
+<%= link_to "ドローンコラム", "/columns", class: "li-kotei" %>
+
+<%= link_to "お問い合わせ", "/schools/mail", class: "li-kotei" %>
+</ul>
+
+</div>
+
+<%= yield %>
+
+</body>
+</html>
