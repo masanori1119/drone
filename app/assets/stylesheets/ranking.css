@@ -1,25 +1,18 @@
 .inner-ranking111 {
-    /* background-color: #007bbb; */
     height: 100px;
     width: 100%;
-    /* margin: 30px 50px 10px 320px; */
     border-radius: 10px;
 }
 
 .ul-ranking111 {
     margin: 0 auto;
-    /* height: 100%; */
-    /* background-color: #69b21d; */
     width: 600px;
-    /* border-radius: 10px; */
-    /* margin-top: 40px; */
 }
 
 .inner-ranking111 li {
     position: relative;
     width: 250px;
     padding: 10px 10px 10px 10px;
-    /* border-radius: 10px; */
     background-color: #fff;
     float: left;
     margin: 26px 0px 0px 0px;
@@ -30,8 +23,6 @@
     font-size: 16px;
     cursor: pointer;
     border-top: 15px solid #69B21F;
-    /* border-right: 2px solid white; */
-    /* border-left: 2px solid white; */
 }
 
 .inner-ranking111 li.selected {
@@ -43,7 +34,6 @@
 
 {
 .ul-ranking111 {
-    /* margin: 30px 50px 10px 320px; */
     height: 100%;
     background-color: #69b21d;
     width: 700px;

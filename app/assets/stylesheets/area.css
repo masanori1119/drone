@@ -1,7 +1,6 @@
 .contens-hokkaido {
     background-color: #69b21d;
     height: 150px;
-    /* margin: 10px 50px 10px 0px; */
     border-radius: 5px;
 }
 
@@ -45,12 +44,10 @@
     background-color: #fff;
     float: left;
     margin: 20px 10px 10px 25px;
-    /* height: 150px; */
 }
 
 .hokkaido-gazo{
     width: 200px;
-    /* height: 150px; */
     float: left;
     margin-right: 20px;
 }
@@ -118,7 +115,6 @@
     float: left;
     margin: 20px 10px 10px 25px;
     height: 150px;
-    /* margin: 0 auto; */
 }
 
 .hokkaido-itiran{

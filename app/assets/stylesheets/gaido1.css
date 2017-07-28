@@ -1,5 +1,4 @@
 .gaido-main{
-    /*height: 6800px;*/
     margin-bottom: 30px;
 }
 
@@ -7,12 +6,10 @@
     padding: 30px 1em;
     margin: 2em 0;
     border: double 5px gray;
-    /*height: 6500px;*/
     width: 1000px;
     margin: 0 auto;
     margin-top: 100px;
     background: white;
-    /* text-align: center; */
 }
 
 .img-gaido {
@@ -94,7 +91,6 @@
 .lineman{
     background-color: #69b21d;
     height: 150px;
-    /* margin: 10px 50px 10px 0px; */
     border-radius: 5px;
     height: 50px;
 }
@@ -111,7 +107,6 @@
     margin: 0 auto;
     margin-top: 100px;
     background: white;
-    /* text-align: center; */
 }
 
 }

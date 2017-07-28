@@ -27,7 +27,6 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
-    /* background-color: grey; */
     height: 1200px;
 
   }
@@ -65,7 +64,6 @@
 }
 
 .table-main td{
-    /* font-weight: 700; */
     color: #fff;
     background: #f5f5f5;
     border-bottom: 1px solid #ccc;
@@ -80,20 +78,15 @@
     margin: 0 auto;
     width: 960px;
     padding: 0 10px;
-    /*height: 2600px;*/
-    /* margin-top: 200px; */
     background-color: #f9fff9;
     border: 2px solid #f9fff9;
     border-radius: 20px;
-    /* margin: 10px; */
 }
 
 .bokeboushi{
     margin: 0 auto;
     width: 800px;
-    /* height: 1400px; */
     padding: 10px;
-    /* background-color: white; */
     border-bottom: 1px dotted #ccc;
 }
 
@@ -128,7 +121,6 @@
     padding: 7px;
     border-radius: 5px;
     background-color: #69b21d;
-    /* float: left; */
     width: 200px;
     margin: 0px 0px 0px 0px;
     border: 2px solid #69b21d;
@@ -146,7 +138,6 @@
     padding: 7px;
     border-radius: 5px;
     background-color: white;
-     /* float: left; */
     width: 200px;
     margin: 0px 0px 0px 0px;
     border: 2px solid #69b21d;
@@ -166,12 +157,9 @@
 
 .kuchikomi-moji111{
     position: relative;
-    /* left: 700px; */
     padding: 0px 0px 0px 3px;
     border-radius: 5px;
     background-color: #ff7f50;
-    /* float: left; */
-    /* width: 200px; */
     margin: 5px 0px 0px 0px;
     border: 2px solid #ff7f50;
     color: white;
@@ -184,14 +172,10 @@
     position: relative;
     width: 100%;
     padding: 20px;
-    /* border: 3px solid grey; */
-    /* border-radius: 5px; */
     background-color: #fff;
     float: left;
     margin: 0px 10px 10px 25px;
-    /* height: 150px; */
     border-bottom: 1px solid grey;
-    /* border-top: 1px solid grey; */
 }
 
 .hyouka-kotei{
@@ -209,8 +193,6 @@
     left: 700px;
     padding: 7px;
     border-radius: 5px;
-   /* background-color: #69b21d;*/
-    /* float: left; */
     width: 180px;
     margin: 0px 0px 0px 0px;
     border: 2px solid #69b21d;
@@ -228,7 +210,6 @@
     padding: 7px;
     border-radius: 5px;
     background-color: white;
-     /* float: left; */
     width: 180px;
     margin: 0px 0px 0px 0px;
     border: 2px solid #69b21d;
