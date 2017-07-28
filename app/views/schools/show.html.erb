@@ -47,35 +47,17 @@
     </tbody>
     </table>
 
-</div>
-<div class="kuchikomi-itiran">
-      <h2 class="syousai clearfix">学校の口コミ</h2>
-   <ul class="hyouka-kotei" style="list-style:none;">
-     <li class="11111">
-     <% @schools.each do |drone| %>
-     <% if drone.reviews.present? %>
-        <span class="wrap"><i class="rate rate<%= drone.reviews.average(:rate).round %>"></i></span>
-        <span class="kuchikomi-hyouka"><%= drone.reviews.average(:rate).round(1) %>点</span>
-        <span class="kuchikomi-kensuu"><%= drone.reviews.count(:rate) %>件</span>
-     <% else %>
-        <span class="wrap"><i class="rate rate0"></i></span>
-        <span class="kuchikomi-kensuu"><%= drone.reviews.count(:rate) %>件</span>
-     <% end %>
-     <% end %>
-     </li>
 
 <!-- 地図 -->
-<% @map.each do |map| %>
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Users</h1>
+<h2 class="syousai clearfix">学校の所在地</h2>
 
   <style type="text/css">
     #map { height: 400px;
    margin-left:auto;    /* 左側マージンを自動的に空ける */
    margin-right:auto;   /* 右側マージンを自動的に空ける */
    text-align:left;     /* 中身を左側表示に戻す */
-   width: 50%;}
+   width: 80%;}
   </style>
   <div id="map"></div>
 
@@ -84,7 +66,7 @@
 <script type="text/javascript">
 function initMap() {
 
-  var test ={lat: <%= map.latitude %>, lng: <%= map.longitude %>};
+  var test ={lat: <%= @map.latitude %>, lng: <%= @map.longitude %>};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
     center: test
@@ -92,7 +74,7 @@ function initMap() {
   var transitLayer = new google.maps.TransitLayer();
   transitLayer.setMap(map);
 
-  var contentString = '住所：<%= map.address %>';
+  var contentString = '住所：<%= @map.address %>';
   var infowindow = new google.maps.InfoWindow({
     content: contentString
   });
@@ -113,6 +95,29 @@ function initMap() {
    src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCoIkLIk5X9ZFJ-IzmrR5PutqckX-6Ve5g&callback=initMap">
  </script>
 <!-- ここまで -->
+
+
+</div>
+
+
+
+
+
+<div class="kuchikomi-itiran">
+      <h2 class="syousai clearfix">学校の口コミ</h2>
+   <ul class="hyouka-kotei" style="list-style:none;">
+     <li class="11111">
+     <% @schools.each do |drone| %>
+     <% if drone.reviews.present? %>
+        <span class="wrap"><i class="rate rate<%= drone.reviews.average(:rate).round %>"></i></span>
+        <span class="kuchikomi-hyouka"><%= drone.reviews.average(:rate).round(1) %>点</span>
+        <span class="kuchikomi-kensuu"><%= drone.reviews.count(:rate) %>件</span>
+     <% else %>
+        <span class="wrap"><i class="rate rate0"></i></span>
+        <span class="kuchikomi-kensuu"><%= drone.reviews.count(:rate) %>件</span>
+     <% end %>
+     <% end %>
+     </li>
 
 
      <li>

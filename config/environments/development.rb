@@ -43,8 +43,8 @@ Rails.application.configure do
   address:               'smtp.gmail.com',
   port:                  587,
   domain:                'example.com',
-  user_name:             'bestdroneschool@gmail.com',
-  password:              'masa1119',
+  user_name:             'email',
+  password:              'password',
   authentication:        'plain',
   enable_starttls_auto:  true
 }

@@ -34,7 +34,7 @@ def show
     # whereは複数まとめて取得
 
     # 地図表示
-    @map = School.where(params[:id])
+    @map = School.find(params[:id])
   end
 
 def search
