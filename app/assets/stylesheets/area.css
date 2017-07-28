@@ -2,6 +2,7 @@
     background-color: #69b21d;
     height: 150px;
     border-radius: 5px;
+    margin-top: 100px;
 }
 
 .moji-hokkaido{
@@ -36,7 +37,7 @@
 }
 
 .hokkaido {
-    position: relative;
+    /*position: relative;*/
     width: 700px;
     padding: 20px;
     border: 3px solid #00c300;
@@ -76,7 +77,7 @@
 
 .inner-hyouka1{
   font-size: 20px;
-  color: red;
+  color: #dc143c;
   font-weight: bolder;
 }
 
@@ -106,7 +107,7 @@
 
 {
 .hokkaido {
-    position: relative;
+   /* position: relative;*/
     width: 700px;
     padding: 20px;
     border: 3px solid #00c300;

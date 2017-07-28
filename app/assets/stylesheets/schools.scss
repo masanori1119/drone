@@ -125,6 +125,7 @@ header {
     height: 500px;
     text-align: center;
     background-color: #f6f5f6;
+    margin-top: 120px;
 }
 
 .navbar {
@@ -181,7 +182,7 @@ header {
 
 .kensaku-botan{
     cursor: pointer;
-    position: relative;
+    // position: relative;
     width: 200px;
     padding: 7px;
     border-radius: 5px;
@@ -251,8 +252,11 @@ footer {
 //固定部分 
 .kotei {
     background-color: white;
+    position: fixed;
     height: 100px;
+    width: 100%;
     margin: 0px;
+    top: 0px;
 }
 
    .ul-kotei {
@@ -264,7 +268,7 @@ footer {
 
 
 .li-kotei{
-    position: relative;
+    // position: relative;
     width: 150px;
     padding: 7px;
     border-radius: 5px;
@@ -278,7 +282,7 @@ footer {
 }
 
 .li-kotei:hover{
-    position: relative;
+    // position: relative;
     width: 150px;
     padding: 7px;
     border-radius: 5px;
@@ -300,6 +304,14 @@ footer {
 
 //最新投稿
 
+.ranking-title {
+    text-align: center;
+    font-size: 16px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
 .ul-ranking1 {
     margin: auto;
     height: 400px;
@@ -309,7 +321,7 @@ footer {
 }
 
 .li-toukou {
-    position: relative;
+    // position: relative;
     width: 260px;
     padding: 20px;
     border: 5px solid #dadada;
@@ -320,7 +332,7 @@ footer {
 }
 
 .ranking-tuzuki{
-    position: relative;
+    // position: relative;
     width: 250px;
     padding: 7px;
     border-radius: 10px;
@@ -351,7 +363,11 @@ footer {
     margin-right: auto;
 }
 
-
+.kutikomi-hyouka{
+    margin: 10px;
+    color: #dc143c;
+    font-weight: 700;
+}
 
 //学校ランキング
 
@@ -365,7 +381,7 @@ a.ranking {
 }
 
 .li-ranking {
-    position: relative;
+    // position: relative;
     width: 250px;
     padding: 20px;
     border: 5px solid #dadada;
@@ -390,10 +406,11 @@ a.ranking {
 }
 
 
-.ranking-title {
+.ranking-title2 {
     text-align: center;
     font-size: 16px;
     padding: 0px;
+    margin-top: 10px;
 }
 
 .ranking-star{
@@ -409,7 +426,8 @@ a.ranking {
 .ranking-ten{
     margin: 10px;
     font-size: 18px;
-    color: red;
+    color: #dc143c;
+    letter-spacing: 5px;
 }
 
 .ranking-kutikomi{
@@ -434,7 +452,7 @@ a.ranking {
 }
 
 .li-tiiki {
-    position: relative;
+    // position: relative;
     width: 120px;
     padding: 10px;
     border: 2px solid white;
@@ -447,7 +465,7 @@ a.ranking {
 }
 
 .li-tiiki:hover{
-    position: relative;
+    // position: relative;
     width: 120px;
     padding: 10px;
     border: 2px solid #badcad;
@@ -552,7 +570,7 @@ a.ranking {
 }
 
 .li-ranking {
-    position: relative;
+    // position: relative;
     width: 290px;
     padding: 20px 5px 5px 5px;
     border: 2px solid #dadada;
@@ -563,7 +581,7 @@ a.ranking {
 }
 
 .ranking-tuzuki {
-    position: relative;
+    // position: relative;
     width: 250px;
     padding: 7px;
     border-radius: 10px;
@@ -577,7 +595,7 @@ a.ranking {
 }
 
 .li-toukou {
-    position: relative;
+    // position: relative;
     width: 260px;
     padding: 20px;
     border: 2px solid #dadada;

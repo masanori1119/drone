@@ -129,36 +129,36 @@ function initMap() {
 <!-- 投稿機能ここまで -->
 </div>
 
- <ul class="bokeboushi" style="list-style:none;">
   <% @comments.each do |review| %>
   <% if review.public? %>
-  <li>
+   <ul class="bokeboushi" style="list-style:none;">
+  <li class="li-toukou-span">
     <span class="wrap"><i class="rate rate<%= review.rate.round %>"></i></span>
     <span class="kuchikomi-hyouka"><%= review.rate.round %>点</span>
   </li>
-  <li>
+  <li class="li-toukou-span">
     <span class="kuchikomi-moji111">投稿者</span>
     <span class="kuchikomi-moji"><%= review.nickname %></span>
   <li>
-  <li> 
+  <li class="li-toukou-span">
     <span class="kuchikomi-moji111">立場</span>
     <span class="kuchikomi-moji"><%= review.Position %></span>
   </li>
     <span class="kuchikomi-moji111">良かったところ</span>
-  <li>
+  <li class="li-toukou-span">
     <p class="good-point">
     <%= review.good %>
     </p>
     <span class="kuchikomi-moji111">悪かったところ・改善して欲しいところ</span>
   </li>
-  <li>
+  <li class="li-toukou-span">
     <p class="bad-point">
     <%= review.bad %>
     </p>
 </li>
-<% end %>
-<% end %>
 </ul>
+<% end %>
+<% end %>
 </div>
 
 

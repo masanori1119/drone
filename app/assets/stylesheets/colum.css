@@ -6,7 +6,7 @@
 
 .colom-navba {
     margin: 2em 0;
-    position: relative;
+    /*position: relative;*/
     padding: 0px 45px 0px 45px;
     border: solid 5px #efffef;
     border-radius: 3px 0 3px 0;
@@ -31,7 +31,7 @@
 
 
 .colom-tuzuki {
-    position: relative;
+    /*position: relative;*/
     width: 120px;
     padding: 7px;
     border-radius: 5px;
@@ -81,7 +81,7 @@
 
 .colom-contens {
     margin: 2em 0;
-    position: relative;
+    /*position: relative;*/
     padding: 0px 45px 0px 45px;
     border: solid 5px #efffef;
     border-radius: 3px 0 3px 0;
@@ -112,7 +112,7 @@ color:#4169e1;
 {
 .hajimete-contens {
     margin: 2em 0;
-    position: relative;
+    /*position: relative;*/
     padding: 0.25em 1em;
     border: solid 2px #69b21d;
     border-radius: 3px 0 3px 0;

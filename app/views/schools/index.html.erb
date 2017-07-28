@@ -92,7 +92,7 @@
 
           <p class="toukousya">投稿者：</span><span><%= review.nickname %></p>
 
-          <span class="hyouka">評　価：</span><span class="wrap"><i class="rate rate<%= review.rate.round %>"></i></span><span><%= review.rate.round %> 点</span>
+          <span class="hyouka">評　価：</span><span class="wrap"><i class="rate rate<%= review.rate.round %>"></i></span><span class="kutikomi-hyouka"><%= review.rate.round %> 点</span>
        </li>
     <% end %>
 </ul>
@@ -112,7 +112,7 @@
           <li class="li-ranking">
           <a href="/schools/<%= school.id %>" class="p-link">
                 <img src="/assets/drone/<%= school.image %>" width="200" class="ranking-gazo">
-                <h5 class="ranking-title"><%= school.name %><h5></a>
+                <h5 class="ranking-title2"><%= school.name %><h5></a>
 
 <!-- 以下、平均点表示 -->
      <% if school.reviews.present? %>
