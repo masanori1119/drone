@@ -1,7 +1,9 @@
 .contens-toukou1{
     background-color: #69b21d;
-    height: 90px;
+    height: 100px;
     border-radius: 5px;
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 .contens-toukou2{
@@ -19,9 +21,19 @@
     background-color: #fff;
 }
 
-.komento-box{
-    width: 500px;
-    margin: 0 auto;
+.komento-box-mail{
+    width: 600px;
+    background-color: #f5f5f5;
+    /* text-align: center; */
+    height: 700px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 100px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .komento-folder{
@@ -30,8 +42,10 @@
 }
 
 .komento-nickname{
- width: 300px;
- height: 30px;
+    width: 500px;
+    height: 30px;
+    /* margin: 0 auto; */
+    /* margin-top: 20px; */
 }
 
 .komento-rate{
@@ -51,12 +65,57 @@
 }
 
 .mail-moji{
-font-weight: 700;
-font-size: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    /* width: 700px; */
+    /* text-align: center; */
+    /* margin-top: 30px; */
 }
 
+.mail-komento-box{
+    width: 500px;
+    height: 300px;
+    margin: 20px 50px 0px 0px;
+}
 
+.mail-komento{
+    width: 500px;
+    height: 30px;
+}
 
+.me-ru-finish{
+    width: 100px;
+    padding: 7px;
+    border-radius: 10px;
+    /* float: left; */
+    /* margin: 40px 15px 0px 15px; */
+    border: 2px solid #7f7fff;
+    color: white;
+    /* font-weight: bolder; */
+    text-align: center;
+    background-color: #7f7fff;
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.me-ru-finish:hover{
+    width: 100px;
+    padding: 7px;
+    border-radius: 10px;
+    /* float: left; */
+    /* margin: 40px 15px 0px 15px; */
+    border: 2px solid #000080;
+    color: white;
+    /* font-weight: bolder; */
+    text-align: center;
+    background-color: #000080;
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
 
 
 /*送信完了時に表示*/
@@ -66,7 +125,6 @@ width: 1750px;
 }
 
 .mail-finish {
-    position: relative;
     width: 300px;
     padding: 7px;
     border-radius: 5px;
@@ -76,7 +134,11 @@ width: 1750px;
     font-weight: bolder;
     text-align: center;
     margin: 0 auto;
+    cursor: default;
 }
+
+
+
 
 .mail-finish-moji{
     font-size: 22px

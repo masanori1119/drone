@@ -108,7 +108,7 @@ function initMap() {
    <ul class="hyouka-kotei" style="list-style:none;">
      <li class="11111">
      <% @schools.each do |drone| %>
-     <% if drone.reviews.present? %>
+     <% if drone.reviews.present?  %>
         <span class="wrap"><i class="rate rate<%= drone.reviews.average(:rate).round %>"></i></span>
         <span class="kuchikomi-hyouka"><%= drone.reviews.average(:rate).round(1) %>点</span>
         <span class="kuchikomi-kensuu"><%= drone.reviews.count(:rate) %>件</span>
