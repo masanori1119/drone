@@ -53,6 +53,7 @@ gem "geocoder"
 gem 'devise'
 gem 'cancancan'
 gem 'rails_admin'
+gem 'dotenv-rails'
 
 group :production do
   gem 'rails_12factor'
