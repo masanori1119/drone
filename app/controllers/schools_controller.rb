@@ -39,7 +39,7 @@ def show
 
 def search
   # 検索機能
-    @drone = School.where("(name LIKE(?)) and (prefecture LIKE(?))", "%#{params[:keyword]}%", "%#{params[:keyword1]}%").page(params[:page]).per(5)
+    @drone = School.where("(name LIKE(?)) and (prefecture LIKE(?))", "%#{params[:keyword]}%", "%#{params[:keyword1]}%").page(params[:page]).per(7)
     @schools = School.where(id: params[:id])
   end
 
