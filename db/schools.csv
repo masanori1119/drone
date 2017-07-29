@@ -1,0 +1,4 @@
+id,"name","company","image","prefecture",area_id,"license","license_2","license_3","license_4","license_5","address","curriculum","point","group","other","created_at","updated_at",latitude,longitude
+1,"日本ドローンアカデミー　札幌校",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+2,"青森ドローンリンクアカデミー","青森ドローン株","02.aomori.png","青森県",2,"操縦","運行管理",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
