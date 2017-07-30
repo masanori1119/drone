@@ -1,5 +1,6 @@
  Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  root to: 'schools#index'
   devise_for :users
   get 'columns/categori_1' => 'columns#categori_1'
   get 'columns/categori_2' => 'columns#categori_2'
@@ -46,7 +47,6 @@ collection do
 end
 end
 
-root to: 'schools#index'
 
 end
 
