@@ -119,9 +119,9 @@
        <li class="ranking-star">
               <span class="wrap">
               <i class="rate rate<%= school.reviews.average(:rate).round %>"></i></span>
-              <span class="ranking-ten"><%= school.reviews.average(:rate).round %>点 </span>
+              <span class="ranking-ten"><%= school.reviews.where(public: true).average(:rate).round %>点 </span>
        </li>
-                <p class="ranking-kutikomi">口コミ：<%= school.reviews.count(:rate) %>件</p>
+                <p class="ranking-kutikomi">口コミ：<%=  school.reviews.where(public: true).length %>件</p>
      <% else %>
                 <span class="wrap"><i class="rate rate0"></i></span>
      <% end %>

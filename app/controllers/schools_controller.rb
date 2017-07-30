@@ -2,10 +2,36 @@ class SchoolsController < ApplicationController
 
   def index
     # 最新の口こみを表示
-    @review = Review.order(created_at: :desc).limit(3)
+    @review = Review.where(public: 1).order(created_at: :desc).limit(3)
+
+
+
+
+
+
     # 学校のランキング（平均評価順）を表示
-     product_ids = Review.group(:school_id).order('average_rate DESC').limit(3).average(:rate).keys
+    # binding.pry
+     public_review = Review.where(public: 1).includes(:school)
+     product_ids = public_review.group(:school_id).order('average_rate DESC').limit(3).average(:rate).keys
      @ranking = product_ids.map{|id| School.find(id)}
+# product_ids = Review.group(:school_id)
+
+# product_ids.each do |data|
+#   data.each do |data1|
+#     if data1.pubic?
+#       data << data1
+#     end
+#   end
+# end
+
+# product_ids = product_ids..order('average_rate DESC').limit(3).average(:rate).keys
+#     @ranking = product_ids.map{|id| School.find(id)}
+
+
+
+
+
+
      # 学校数をカウント
      @kensuu =School.all.count
      @hokkaido = School.where(prefecture: "北海道").count
@@ -26,16 +52,44 @@ class SchoolsController < ApplicationController
 
 end
 
+
+
+
+
+
+
 def show
     @drone = School.find(params[:id])
     # findは一つづ取得
-    @comments = @drone.reviews
-    @schools = School.where(id: params[:id])
-    # whereは複数まとめて取得
+
+
+@comments = @drone.reviews.where(public: 1)
+
+
+
+
+
+
+@reviews = @drone.reviews.where(public: 1)
+
+
+
+
+
 
     # 地図表示
     @map = School.find(params[:id])
   end
+
+
+
+
+
+
+
+
+
+
 
 def search
   # 検索機能
