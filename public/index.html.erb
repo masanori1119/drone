@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- ビューポートの設定 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <title>ベストドローンスクール</title>
+  </head>
+
+
+<body>
+  <header>
+  <a href="/"><%= image_tag 'main.png', class: "img-main" %></a>
+  </header>
+<div class="navbar">
+  <div class="kensaku">
+
+<%= form_tag('/schools/search', method: :get) do %>
+    <input type="text" name="keyword" placeholder="学校名で検索" class="kensaku1">
+    <span class="batubatu">✖</span>
+    <select name="keyword1" placeholder="都道府県名を入力" class="kensaku2">
+<option value="" selected="selected">都道府県から検索できます。</option>
+<option value="北海道">北海道</option>
+<option value="青森県">青森県</option>
+<option value="岩手県">岩手県</option>
+<option value="宮城県">宮城県</option>
+<option value="秋田県">秋田県</option>
+<option value="山形県">山形県</option>
+<option value="福島県">福島県</option>
+<option value="茨城県">茨城県</option>
+<option value="栃木県">栃木県</option>
+<option value="群馬県">群馬県</option>
+<option value="埼玉県">埼玉県</option>
+<option value="千葉県">千葉県</option>
+<option value="東京都">東京都</option>
+<option value="神奈川県">神奈川県</option>
+<option value="新潟県">新潟県</option>
+<option value="富山県">富山県</option>
+<option value="石川県">石川県</option>
+<option value="福井県">福井県</option>
+<option value="山梨県">山梨県</option>
+<option value="長野県">長野県</option>
+<option value="岐阜県">岐阜県</option>
+<option value="静岡県">静岡県</option>
+<option value="愛知県">愛知県</option>
+<option value="三重県">三重県</option>
+<option value="滋賀県">滋賀県</option>
+<option value="京都府">京都府</option>
+<option value="大阪府">大阪府</option>
+<option value="兵庫県">兵庫県</option>
+<option value="奈良県">奈良県</option>
+<option value="和歌山県">和歌山県</option>
+<option value="鳥取県">鳥取県</option>
+<option value="島根県">島根県</option>
+<option value="岡山県">岡山県</option>
+<option value="広島県">広島県</option>
+<option value="山口県">山口県</option>
+<option value="徳島県">徳島県</option>
+<option value="香川県">香川県</option>
+<option value="愛媛県">愛媛県</option>
+<option value="高知県">高知県</option>
+<option value="福岡県">福岡県</option>
+<option value="佐賀県">佐賀県</option>
+<option value="長崎県">長崎県</option>
+<option value="熊本県">熊本県</option>
+<option value="大分県">大分県</option>
+<option value="宮崎県">宮崎県</option>
+<option value="鹿児島県">鹿児島県</option>
+<option value="沖縄県">沖縄県</option>
+</select>
+         <input type="submit" class="kensaku-botan" value="学校を検索する">
+         <% end %>
+
+</div>
+</div>
+
+
+<!-- 最新の口コミ -->
+<div class="left-content">
+    <h3 class="h3-ranking">最新の投稿</h3>
+<ul class ="ul-ranking1" style="list-style:none;">
+
+    <% @review.each do |review| %>
+       <li class="li-toukou">
+        <a href="/schools/<%= review.school.id %>" class="p-link">
+          <img src="/assets/drone/<%= review.school.image %>" width="200" class="ranking-gazo1">
+         <h5 class="ranking-title"><%= review.school.name %></h5></a>
+          <span class="toukoubi">投稿日：<%= review.created_at.strftime("%Y年%m月%d日 %H時%M分") %></span>
+
+          <p class="toukousya">投稿者：</span><span><%= review.nickname %></p>
+
+          <span class="hyouka">評　価：</span><span class="wrap"><i class="rate rate<%= review.rate.round %>"></i></span><span class="kutikomi-hyouka"><%= review.rate.round %> 点</span>
+       </li>
+    <% end %>
+</ul>
+</div>
+
+
+
+<!-- 人気学校ランキング -->
+<div class="center-content">
+    <h3 class="h3-ranking">平均評価が高い学校ランキング</h3>
+
+    <h3 class="ranking-tuzuki"><a class="ranking" href="/schools/ranking">ランキングの続きをみる</a></h3>
+
+
+        <ul class ="ul-ranking2" style="list-style:none;"> 
+            <% @ranking.each.with_index(1) do |school, i| %>
+          <li class="li-ranking">
+          <a href="/schools/<%= school.id %>" class="p-link">
+                <img src="/assets/drone/<%= school.image %>" width="200" class="ranking-gazo">
+                <h5 class="ranking-title2"><%= school.name %><h5></a>
+
+<!-- 以下、平均点表示 -->
+     <% if school.reviews.present? %>
+       <li class="ranking-star">
+              <span class="wrap">
+              <i class="rate rate<%= school.reviews.average(:rate).round %>"></i></span>
+              <span class="ranking-ten"><%= school.reviews.where(public: true).average(:rate).round %>点 </span>
+       </li>
+                <p class="ranking-kutikomi">口コミ：<%=  school.reviews.where(public: true).length %>件</p>
+     <% else %>
+                <span class="wrap"><i class="rate rate0"></i></span>
+     <% end %>
+          </li>
+            <% end %>
+        </ul>
+</div>
+
+
+<div class="right-content" id="page_link1">
+<h3 class="h3-ranking">地域から学校を探す</h3>
+
+ <ul class ="ul-ranking3" style="list-style:none;">
+    <li class="li-tiiki">
+        <h5 class="tiiki-moji">
+        <%= link_to "北海道", "/schools/zenkoku#page_hokkaido" %>
+        <p class="ranking-kutikomi">学校数：<%= @hokkaido %>件</h5></p>
+    </li>
+
+    <li class="li-tiiki">
+        <h5 class="tiiki-moji">
+        <%= link_to "東北", "/schools/zenkoku#page_touhoku" %>
+        <p class="ranking-kutikomi">学校数：<%= @touhoku %>件</h5></p>
+    </li>
+
+    <li class="li-tiiki">
+        <h5 class="tiiki-moji">
+        <%= link_to "関東", "/schools/zenkoku#page_kanto" %>
+        <p class="ranking-kutikomi">学校数：<%= @kanto %>件</h5></p>
+    </li>
+
+    <li class="li-tiiki">
+        <h5 class="tiiki-moji">
+        <%= link_to "中部", "/schools/zenkoku#page_tyubu" %>
+        <p class="ranking-kutikomi">学校数：<%= @chubu %>件</h5></p>
+    </li>
+
+    <li class="li-tiiki">
+        <h5 class="tiiki-moji">
+        <%= link_to "近畿", "/schools/zenkoku#page_kinki" %>
+        <p class="ranking-kutikomi">学校数：<%= @kinki %>件</h5></p>
+    </li>
+
+    <li class="li-tiiki">
+        <h5 class="tiiki-moji">
+        <%= link_to "中国地方", "/schools/zenkoku#page_tyugoku" %>
+        <p class="ranking-kutikomi">学校数：<%= @chugoku %>件</h5></p>
+    </li>
+
+    <li class="li-tiiki">
+        <h5 class="tiiki-moji">
+        <%= link_to "四国", "/schools/zenkoku#page_shikoku" %>
+        <p class="ranking-kutikomi">学校数：<%= @shikoku %>件</h5></p>
+    </li>
+
+    <li class="li-tiiki">
+        <h5 class="tiiki-moji">
+        <%= link_to "九州・沖縄", "/schools/zenkoku#page_kyusyu" %>
+        <p class="ranking-kutikomi">学校数：<%= @kyusyu %>件</h5></p>
+    </li>
+ </ul>
+</div>
+
+
+
+ <div class="botom-content">
+    <h3 class="h3-ranking">学習内容から学校を探す</h3>
+
+<ul class ="ul-ranking4" style="list-style:none;">
+    <li class="li-tiiki">
+    <a class="irokotei" href="/schools/license"><h5 class="tiiki-moji">操縦<h5></a>
+    <p class="ranking-kutikomi">学校数：<%= @sousa %>件</p>
+    </li>
+
+    <li class="li-tiiki">
+    <a class="irokotei" href="/schools/license_2">
+    <h5 class="tiiki-moji">運行管理<h5></a>
+    <p class="ranking-kutikomi">学校数：<%= @kanri %>件</p>
+    </li>
+
+    <li class="li-tiiki">
+    <a class="irokotei" href="/schools/license_3">
+    <h5 class="tiiki-moji">空撮<h5></a>
+    <p class="ranking-kutikomi">学校数：<%= @kuusatsu %>件</p>
+    </li>
+
+    <li class="li-tiiki">
+    <a class="irokotei" href="/schools/license_4">
+    <h5 class="tiiki-moji">測量<h5></a>
+    <p class="ranking-kutikomi">学校数：<%= @sokuryou %>件</p>
+    </li>
+
+    <li class="li-tiiki">
+    <a class="irokotei" href="/schools/license_5">
+    <h5 class="tiiki-moji">農業<h5></a>
+    <p class="ranking-kutikomi">学校数：<%= @nougyou %>件</p>
+    </li>
+
+</ul>
+</div>
+
+  <footer>
+  <p class="copy-right">Copyright ©2017 ベストドローンスクール</p>
+  </footer>
+
+</body>
+</html>
