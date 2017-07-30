@@ -1,0 +1,1943 @@
+.contens-hokkaido {
+    background-color: #69b21d;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+.moji-hokkaido{
+    display: inline-block;
+    margin: 40px 50px 50px 320px;
+    padding: 5px 10px;
+    color: #69b21d;
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+}
+
+.contens-hokkaido2 {
+  background-color: white;
+}
+
+.inner-hokkaido {
+    background-color: #69b21d;
+    height: 70px;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.hokkaido-itiran{
+    margin: 0 auto;
+    width: 800px;
+    height: 1400px;
+    padding: 0px;
+    background-color: white;
+}
+
+.hokkaido {
+    /*position: relative;*/
+    width: 700px;
+    padding: 20px;
+    border: 3px solid #00c300;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 10px 10px 25px;
+}
+
+.hokkaido-gazo{
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.inner-moji{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    font-weight: 100;
+}
+
+.hokkaido-moji{
+    font-size: 24px;
+    padding: 0px;
+    color: green;
+  }
+
+.hokkaido-link{
+  text-decoration:none;
+}
+
+.inner-hyouka{
+  font-size: 20px;
+  color: gold;
+}
+
+.inner-hyouka1{
+  font-size: 20px;
+  color: #dc143c;
+  font-weight: bolder;
+}
+
+.inner-hyouka2{
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.botanman{
+    font-size: 15px;
+    margin: 7px 10px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    background: green;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+.paginate {
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+
+@media screen and (max-width: 479px)
+
+{
+.hokkaido {
+   /* position: relative;*/
+    width: 700px;
+    padding: 20px;
+    border: 3px solid #00c300;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 10px 10px 25px;
+    height: 150px;
+}
+
+.hokkaido-itiran{
+    width: 800px;
+    height: 1400px;
+    padding: 0px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.inner-hokkaido {
+    background-color: #69b21d;
+    height: 70px;
+    width: 100%;
+    margin: 30px 50px 10px 0px;
+    border-radius: 10px;
+}
+}
+.colom-body{
+    height: 3500px;
+    background-color: #f9fff9;
+    padding: 100px;
+}
+
+.colom-navba {
+    margin: 2em 0;
+    /*position: relative;*/
+    padding: 0px 45px 0px 45px;
+    border: solid 5px #efffef;
+    border-radius: 3px 0 3px 0;
+    width: 800px;
+    margin: 0px auto;
+    color: #4169e1;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.colom-categori{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.colom-categori-moji{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.colom-tuzuki {
+    /*position: relative;*/
+    width: 120px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #c0c0c0;
+    float: left;
+    margin: 0px 15px 0px 15px;
+    border: 2px solid  #c0c0c0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.colom-kategori{
+    padding: 10px 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.colom-image{
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.colom-contens-moji1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    color: gray;
+    font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+   border-bottom: 1px dashed #dcdcdc;
+   padding-bottom: 15px; /* 内容と線との間隔量 */
+}
+
+.colom-contens-moji2 {
+    color: gray;
+    font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+    font-size: 20px;
+}
+
+.colom-contens-moji3 {
+    font-size: 20px;
+    color: #69b21d;
+}
+
+.colom-contens {
+    margin: 2em 0;
+    /*position: relative;*/
+    padding: 0px 45px 0px 45px;
+    border: solid 5px #efffef;
+    border-radius: 3px 0 3px 0;
+    height: 620px;
+    width: 800px;
+    margin: 0px auto;
+    color: #4169e1;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+.hajimete-contens{
+    height: 800px;
+}
+
+.a-colom{
+color:#4169e1;
+}
+
+
+
+
+@media screen and (max-width: 479px)
+
+{
+.hajimete-contens {
+    margin: 2em 0;
+    /*position: relative;*/
+    padding: 0.25em 1em;
+    border: solid 2px #69b21d;
+    border-radius: 3px 0 3px 0;
+    height: 700px;
+    width: 800px;
+    background-color: white;
+}
+
+.hajimete-main {
+    width: 900px;
+    margin: 0 auto;
+    height: 800px;
+}
+
+}
+
+
+
+.gaido-main{
+    margin-bottom: 30px;
+}
+
+.gaido-contens {
+    padding: 30px 1em;
+    margin: 2em 0;
+    border: double 5px gray;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: white;
+}
+
+.img-gaido {
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+/*タイトル文字*/
+.gaido-contens-moji1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: whitesmoke;
+    border-left: solid 10px grey;
+}
+
+/*文章*/
+.gaido-contens-moji2 {
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+}
+
+/*中文字*/
+.gaido-contens-moji5 {
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/*大文字*/
+.gaido-contens-moji3 {
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 0px;
+    line-height: 80px;
+}
+
+.gaido-contens-moji333 {
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 0px;
+    line-height: 80px;
+    margin-top: 500px;
+}
+
+
+
+/*リンク先*/
+.gaido-contens-moji4 {
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+    line-height: 100px;
+    text-align: right;
+}
+
+.colom-komoji{
+    padding-top: 0px;
+    color:gray;
+}
+
+/*youtube の位置調整*/
+.youtube-center{
+    text-align: center;
+    margin: 40px;
+}
+
+.lineman{
+    background-color: #69b21d;
+    height: 150px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+@media screen and (max-width: 479px)
+
+{
+.gaido-contens {
+    padding: 30px 1em;
+    margin: 2em 0;
+    border: double 5px gray;
+    height: 6500px;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: white;
+}
+
+}
+.gaidrain-main{
+height: 1700px
+}
+
+.gaidorain-contens{
+    margin: 2em 0;
+    /*position: relative;*/
+    padding: 0.25em 1em;
+    border: solid 2px #69b21d;
+    border-radius: 3px 0 3px 0;
+    height: 1500px;
+    width: 1000px;
+    margin: 100px auto;
+}
+
+
+.gaidorain-contens:before,.gaidorain-contens:after
+{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: solid 2px #69b21d;
+    border-radius: 50%;
+}
+
+.gaidorain-contens:after {
+    top: -16px;
+    left: -12px;
+}
+.gaidorain-contens:before {
+    bottom: -12px;
+    right: -16px;
+}
+
+
+/*タイトル文字*/
+.gaidorain-contens-moji3 {
+    font-size: 18px;
+    margin-top: 60px;
+    padding: 0px;
+}
+
+/*赤文字 文章*/
+.gaidorain-contens-moji4 {
+    font-size: 18px;
+    color: red;
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+/*大文字*/
+.gaidorain-contens-moji5 {
+    color: red;
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.lineman{
+    background-color: #69b21d;
+    height: 150px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 479px)
+
+{
+.gaidorain-contens {
+    margin: 2em 0;
+    /*position: relative;*/
+    padding: 0.25em 1em;
+    border: solid 2px #69b21d;
+    border-radius: 3px 0 3px 0;
+    height: 1500px;
+    width: 800px;
+    background-color: white;
+}
+
+.gaidorain-main {
+    width: 900px;
+    margin: 0 auto;
+}
+
+}
+.hajimete-contens-moji1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    color: black;
+}
+
+.hajimete-contens-moji2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 0px;
+    color: black;
+}
+
+.hajimete-contens-moji3 {
+    font-size: 20px;
+    color: #69b21d;
+}
+
+.hajimete-contens {
+    margin: 2em 0;
+    /*position: relative;*/
+    padding: 0.25em 1em;
+    border: solid 2px #69b21d;
+    border-radius: 3px 0 3px 0;
+    height: 700px;
+    width: 1000px;
+    margin: 100px auto;
+    color: #69b21d;
+}
+
+.hajimete-contens{
+    height: 800px;
+}
+
+.hajimete-main{
+    height: 1000px;
+}
+
+.hajimete-contens:before,.hajimete-contens:after
+{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: solid 2px #69b21d;
+    border-radius: 50%;
+}
+.hajimete-contens:after {
+    top: -16px;
+    left: -12px;
+}
+.hajimete-contens:before {
+    bottom: -12px;
+    right: -16px;
+}
+
+
+@media screen and (max-width: 479px)
+
+{
+.hajimete-contens {
+    margin: 2em 0;
+    /*position: relative;*/
+    padding: 0.25em 1em;
+    border: solid 2px #69b21d;
+    border-radius: 3px 0 3px 0;
+    height: 700px;
+    width: 800px;
+    background-color: white;
+}
+
+.hajimete-main {
+    width: 900px;
+    margin: 0 auto;
+    height: 800px;
+}
+
+}
+
+
+
+.license-none{
+float: left
+}
+.contens-toukou1{
+    background-color: #69b21d;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.contens-toukou2{
+    width: 770px;
+    margin: 0 auto;
+}
+
+.contens-toukou3 {
+    display: inline-block;
+    margin: 16px 0px 50px 0px;
+    color: #69b21d;
+    border-radius: 10px;
+    width: 780px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.komento-box-mail{
+    width: 600px;
+    background-color: #f5f5f5;
+    /* text-align: center; */
+    height: 700px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 100px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.komento-folder{
+   margin: 15px 0;
+   width: 500px
+}
+
+.komento-nickname{
+    width: 500px;
+    height: 30px;
+    /* margin: 0 auto; */
+    /* margin-top: 20px; */
+}
+
+.komento-rate{
+ width: 50px;
+ height: 30px;
+}
+
+
+.komento-good{
+    width: 500px;
+    height: 300px;
+}
+
+.komento-bad{
+    width: 500px;
+    height: 300px;
+}
+
+.mail-moji{
+    font-weight: 700;
+    font-size: 16px;
+    /* width: 700px; */
+    /* text-align: center; */
+    /* margin-top: 30px; */
+}
+
+.mail-komento-box{
+    width: 500px;
+    height: 300px;
+    margin: 20px 50px 0px 0px;
+}
+
+.mail-komento{
+    width: 500px;
+    height: 30px;
+}
+
+.me-ru-finish{
+    width: 100px;
+    padding: 7px;
+    border-radius: 10px;
+    /* float: left; */
+    /* margin: 40px 15px 0px 15px; */
+    border: 2px solid #7f7fff;
+    color: white;
+    /* font-weight: bolder; */
+    text-align: center;
+    background-color: #7f7fff;
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.me-ru-finish:hover{
+    width: 100px;
+    padding: 7px;
+    border-radius: 10px;
+    /* float: left; */
+    /* margin: 40px 15px 0px 15px; */
+    border: 2px solid #000080;
+    color: white;
+    /* font-weight: bolder; */
+    text-align: center;
+    background-color: #000080;
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+/*送信完了時に表示*/
+
+.mail-box{
+/*width: 1750px;*/
+}
+
+.mail-finish {
+    width: 300px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #00c300;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 auto;
+    cursor: default;
+}
+
+
+
+
+.mail-finish-moji{
+    font-size: 22px
+}
+.contens-toukou1{
+    background-color: #69b21d;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.contens-toukou2{
+    width: 770px;
+    margin: 0 auto;
+}
+
+.contens-toukou3 {
+    display: inline-block;
+    margin: 16px 0px 50px 0px;
+    color: #69b21d;
+    border-radius: 10px;
+    width: 780px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.komento-box{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.komento-folder{
+   margin: 15px 0;
+   width: 500px
+}
+
+.komento-nickname{
+ width: 300px;
+ height: 30px;
+}
+
+.komento-rate{
+ width: 50px;
+ height: 30px;
+}
+
+
+.komento-good{
+    width: 500px;
+    height: 300px;
+}
+
+.komento-bad{
+    width: 500px;
+    height: 300px;
+}
+
+/*createのページ*/
+.gaido-link{
+color:red;
+}
+.inner-ranking111 {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ul-ranking111 {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.inner-ranking111 li {
+    position: relative;
+    width: 250px;
+    padding: 10px 10px 10px 10px;
+    background-color: #fff;
+    float: left;
+    margin: 26px 0px 0px 0px;
+    border: 2px solid #69B21F;
+    color: #69B21F;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-top: 15px solid #69B21F;
+}
+
+.inner-ranking111 li.selected {
+  background-color: #fff;
+  color: red;
+}
+
+@media screen and (max-width: 479px)
+
+{
+.ul-ranking111 {
+    height: 100%;
+    background-color: #69b21d;
+    width: 700px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-ranking111 li {
+    position: relative;
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    float: left;
+    margin: 26px 0px 0px 30px;
+    border: 2px solid #00c300;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+}
+@charset "UTF-8";
+/* line 23, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 16px;
+  font-size: 16px;
+}
+/* line 29, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate:before, .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+/* line 38, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate:before {
+  color: #ddd;
+}
+/* line 41, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate:after {
+  color: #ffa500;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 47, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate0:after {
+  width: 0;
+}
+
+/* line 50, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate1:after {
+  width: 8px;
+}
+
+/* line 53, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate2:after {
+  width: 16px;
+}
+
+/* line 56, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate3:after {
+  width: 24px;
+}
+
+/* line 59, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate4:after {
+  width: 32px;
+}
+
+/* line 62, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate5:after {
+  width: 40px;
+}
+
+/* line 65, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate6:after {
+  width: 48px;
+}
+
+/* line 68, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate7:after {
+  width: 56px;
+}
+
+/* line 71, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate8:after {
+  width: 64px;
+}
+
+/* line 74, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate9:after {
+  width: 72px;
+}
+
+/* line 77, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.rate10:after {
+  width: 80px;
+}
+
+/* line 82, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.wrap {
+  width: 80px;
+  margin: 0 auto;
+}
+
+/* line 102, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+body {
+  background-color: white;
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 1040px;
+}
+
+/* line 110, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+h1, h2, h3, h4, h5, h6, p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* line 115, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+a.irokotei {
+  color: #69b21d;
+}
+
+/* line 119, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+a {
+  text-decoration: none;
+  color: #69b21d;
+}
+
+/* line 124, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+header {
+  height: 500px;
+  text-align: center;
+  background-color: #f6f5f6;
+  margin-top: 120px;
+}
+
+/* line 131, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.navbar {
+  height: 120px;
+  margin: 0 auto;
+  background-color: #f6f5f6;
+}
+
+/* line 137, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.kensaku {
+  margin: auto;
+  height: 120px;
+  width: 1000px;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+/* line 145, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.kensaku1 {
+  width: 380px;
+  margin: 26px 4px 0px 0px;
+  padding: 0;
+  background-color: #ffffff;
+  border: none;
+  color: grey;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 100;
+  border: 5px solid #69b21d;
+  float: left;
+}
+
+/* line 161, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.kensaku2 {
+  width: 280px;
+  margin: 33px 4px 0px 0px;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 0;
+  color: gray;
+  border: 5px solid #69b21d;
+  float: left;
+}
+
+/* line 177, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.batubatu {
+  font-size: 30px;
+  margin: 36px 20px 0px 20px;
+  float: left;
+}
+
+/* line 183, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.kensaku-botan {
+  cursor: pointer;
+  width: 200px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #696969;
+  margin: 34px 15px 0px 30px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  height: 50px;
+  font-size: 22px;
+}
+
+/* line 199, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.img-main {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* line 206, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.contents {
+  background-color: #C0C0C0;
+  width: 960px;
+  margin: 10px auto;
+}
+
+/* line 212, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.left-content {
+  height: 450px;
+  background-color: white;
+}
+
+/* line 218, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.center-content {
+  height: 450px;
+  background-color: #f6f5f6;
+}
+
+/* line 224, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.center-content2 {
+  height: 400px;
+  background-color: #f6f5f6;
+}
+
+/* line 229, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.right-content {
+  height: 300px;
+  background-color: #f8f4e6;
+}
+
+/* line 234, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.botom-content {
+  height: 370px;
+  background-color: #f8f4e6;
+}
+
+/* line 239, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+footer {
+  background-color: white;
+  height: 100px;
+}
+
+/* line 244, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 253, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.kotei {
+  background-color: white;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  margin: 0px;
+  top: 0px;
+  z-index: 3;
+}
+
+/* line 263, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ul-kotei {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+/* line 271, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.li-kotei {
+  width: 130px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #fff;
+  float: left;
+  margin: 40px 5px 0px 5px;
+  border: 2px solid #00c300;
+  color: #69b21d;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 285, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.li-kotei:hover {
+  width: 130px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #00c300;
+  float: left;
+  margin: 40px 5px 0px 5px;
+  border: 2px solid #00c300;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 300, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.img-kotei {
+  float: left;
+  width: 300px;
+  height: auto;
+  margin: 30px 40px 20px 30px;
+}
+
+/* line 309, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ranking-title {
+  text-align: center;
+  font-size: 16px;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 317, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ul-ranking1 {
+  margin: auto;
+  height: 400px;
+  width: 1060px;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+/* line 325, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.li-toukou {
+  width: 260px;
+  padding: 20px;
+  border: 5px solid #dadada;
+  border-radius: 20px;
+  background-color: #fff;
+  float: left;
+  margin: 20px;
+}
+
+/* line 336, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ranking-tuzuki {
+  width: 250px;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: #ffa500;
+  /* margin: 40px 15px 0px 15px; */
+  border: 2px solid gold;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: auto;
+}
+
+/* line 350, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.toukoubi {
+  margin-left: 0px;
+}
+
+/* line 354, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.toukousya {
+  margin-left: 0px;
+}
+
+/* line 358, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.hyouka {
+  margin-left: 0px;
+}
+
+/* line 362, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ranking-gazo1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 368, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.kutikomi-hyouka {
+  margin: 10px;
+  color: #dc143c;
+  font-weight: 700;
+}
+
+/* line 377, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.p-link {
+  color: black;
+}
+
+/* line 381, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+a.ranking {
+  color: white;
+}
+
+/* line 385, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.li-ranking {
+  width: 250px;
+  padding: 20px;
+  border: 5px solid #dadada;
+  border-radius: 20px;
+  background-color: #fff;
+  float: left;
+  margin: 20px;
+}
+
+/* line 396, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ul-ranking2 {
+  margin: auto;
+  height: 300px;
+  width: 1050px;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+/* line 404, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ranking-gazo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 411, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ranking-title2 {
+  text-align: center;
+  font-size: 16px;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+/* line 418, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ranking-star {
+  font-size: 14px;
+  margin-left: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 425, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.li-ranking {
+  text-align: right;
+}
+
+/* line 429, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ranking-ten {
+  margin: 10px;
+  font-size: 18px;
+  color: #dc143c;
+  letter-spacing: 5px;
+}
+
+/* line 436, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ranking-kutikomi {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  color: #696969;
+}
+
+/* line 443, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.h3-ranking {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 451, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.tiiki-moji {
+  text-align: center;
+  font-size: 22px;
+  padding: 0px;
+}
+
+/* line 457, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.li-tiiki {
+  width: 120px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #fff;
+  float: left;
+  margin: 10px;
+  color: #69b21d;
+  display: block;
+}
+
+/* line 470, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.li-tiiki:hover {
+  width: 120px;
+  padding: 10px;
+  border: 2px solid #badcad;
+  border-radius: 10px;
+  background-color: #badcad;
+  float: left;
+  margin: 10px;
+  color: #69b21d;
+}
+
+/* line 482, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ul-ranking3 {
+  margin: auto;
+  height: 140px;
+  width: 1350px;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+/* line 493, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.ul-ranking4 {
+  margin: auto;
+  height: 140px;
+  width: 820px;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+/* line 501, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+.copy-right {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+  /* line 515, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .li-kotei {
+    width: 7%;
+    padding: 5px 10px 10px 10px;
+    height: 30px;
+    margin: 30px 5px 0px 0px;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  /* line 526, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .li-kotei:hover {
+    width: 7%;
+    padding: 5px 10px 10px 10px;
+    height: 30px;
+    margin: 30px 5px 0px 0px;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  /* line 537, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .ul-kotei {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    vertical-align: middle;
+    /* display: table-cell; */
+    /* text-align: center; */
+  }
+
+  /* line 547, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .kotei {
+    background-color: white;
+    height: 100px;
+    margin: 0px;
+  }
+
+  /*index*/
+  /* line 557, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .ul-ranking3 {
+    margin: 0 auto;
+    height: 300px;
+    width: 700px;
+    padding-left: 0;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* line 567, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .ul-ranking2 {
+    margin: auto;
+    height: 300px;
+    width: 940px;
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+  /* line 575, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .li-ranking {
+    width: 290px;
+    padding: 20px 5px 5px 5px;
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 5px 0px 0px;
+  }
+
+  /* line 586, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .ranking-tuzuki {
+    width: 250px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #ffa500;
+    /* margin: 40px 15px 0px 15px; */
+    border: 2px solid gold;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 750px;
+  }
+
+  /* line 600, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .li-toukou {
+    width: 260px;
+    padding: 20px;
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 5px 0px 5px;
+  }
+
+  /* line 611, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .ul-ranking1 {
+    margin: auto;
+    height: 350px;
+    width: 950px;
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+  /* line 619, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .kensaku {
+    margin: auto;
+    height: 120px;
+    width: 880px;
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+  /* line 627, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .kensaku1 {
+    width: 300px;
+    margin: 26px 4px 0px 0px;
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
+    color: grey;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 100;
+    border: 5px solid #69b21d;
+    float: left;
+  }
+
+  /* line 644, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .kensaku2 {
+    width: 250px;
+    margin: 33px 4px 0px 0px;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 0;
+    color: gray;
+    border: 5px solid #69b21d;
+    float: left;
+  }
+
+  /* line 660, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  header {
+    height: 300px;
+    text-align: center;
+    background-color: #f6f5f6;
+    /* width: 1000px; */
+  }
+
+  /* line 667, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .img-main {
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* height: auto; */
+  }
+
+  /* line 673, /Users/satomasanori/Desktop/drone/app/assets/stylesheets/schools.scss */
+  .right-content {
+    height: 450px;
+    background-color: #f8f4e6;
+  }
+}
+.inner-hokkaido2 {
+    background-color: #007bbb;
+    height: 100px;
+    width: 800px;
+    margin: 30px 50px 10px 320px;
+    border-radius: 10px;
+}
+
+.ul-narabikae{
+    margin: 0px;
+    width: 100%;
+    height: 100%
+}
+
+
+.inner-hokkaido2 li{
+    position: relative;
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 26px 0px 0px 20px;
+    border: 2px solid #007bbb;
+    color: #007bbb;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.inner-hokkaido2 li.selected {
+  background-color: #fff;
+  color: #AECD6A;
+}
+
+.li-narabikae2{
+    position: relative;
+    width: 150px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 70px 0px 0px 20px;
+    border: 2px solid #007bbb;
+    color: #007bbb;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.li-narabikae3{
+    position: relative;
+    width: 150px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 70px 0px 0px 20px;
+    border: 2px solid #007bbb;
+    color: #007bbb;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.inner-seach {
+    background-color: #69b21d;
+    height: 70px;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+.seach-itiran {
+    margin: 0 auto;
+    width: 800px;
+    height: 1400px;
+    padding: 0px;
+    background-color: white;
+}
+.line-line{
+    width: 100%;
+    height: 20px;
+    border: 2px solid;
+    color: #69b21d;
+    background-color: #69b21d;
+    border-radius: 5px;
+    margin-top: 120px;
+}
+
+.main-gazo{
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    height: 410px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+
+
+.school-annai{
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 1600px;
+
+  }
+
+
+.top-gazo{
+  width: 100%;
+  float: left;
+  margin-right: 20px;
+}
+
+.syousai{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 10px 0px 20px;
+}
+
+.table-main{
+    width: 100%;
+    height: 0px;
+    padding: 0px 0px 0px 0px;
+    border-spacing: 0px;
+    border-top: 1px solid #ccc;
+    margin: 15px 0px 0px 0px;
+}
+
+.table-main tr th{
+    font-weight: 700;
+    color: #fff;
+    background: #69b21d;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    width: 30%;
+
+}
+
+.table-main td{
+    color: #fff;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    width: 70%;
+    padding: 30px;
+    color: gray;
+}
+
+.kuchikomi-itiran{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 960px;
+    padding: 0 10px;
+    /* background-color: #f9fff9; */
+    /* border: 2px solid #f9fff9; */
+    border-radius: 20px;
+}
+
+.bokeboushi{
+    margin: 0 auto;
+    width: 800px;
+    padding: 10px;
+    /* border-bottom: 1px dotted #ccc; */
+    border: 1px solid #efffef;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #f9fff9;
+}
+
+.kuchikomi-hoshi{
+    font-size: 30px;
+    color: gold;
+    margin: 0px 10px 0px 0px;
+}
+
+.kuchikomi-hoshi2{
+    font-size:26px;
+    color: gold;
+    margin: 0px 10px 0px 0px;
+}
+
+.kuchikomi-hyouka{
+    font-size: 20px;
+    color: #dc143c;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.kuchikomi-kensuu{
+    font-size: 20px;
+    color: #ff7f50;
+    font-weight: bolder;
+    margin-left: 0px;
+}
+
+.kuchikomi-toukou{
+    /*position: relative;*/
+    left: 700px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #69b21d;
+    width: 200px;
+    margin: 0px 0px 0px 0px;
+    border: 2px solid #69b21d;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+.kuchikomi-toukou:hover{
+    /*position: relative;*/
+    left: 700px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: white;
+    width: 200px;
+    margin: 0px 0px 0px 0px;
+    border: 2px solid #69b21d;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.kuchikomi-moji{
+    font-size: 14px;
+    padding: 0px;
+    color: black;
+    font-weight: 200;
+}
+
+.kuchikomi-moji111{
+    /*position: relative;*/
+    padding: 0px 0px 0px 3px;
+    border-radius: 5px;
+    background-color: #2e8b57;
+    margin: 5px 0px 0px 0px;
+    border: 3px solid #2e8b57;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 14px;
+}
+
+.kuchikomi{
+   /* position: relative;*/
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    float: left;
+    margin: 0px 10px 10px 25px;
+    border-bottom: 1px solid grey;
+}
+
+.hyouka-kotei{
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+  }
+
+
+
+/*コメント機能*/
+
+#slide {
+    /*position: relative;*/
+    left: 700px;
+    padding: 7px;
+    border-radius: 5px;
+    width: 180px;
+    margin: 0px 0px 0px 0px;
+    border: 2px solid #69b21d;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: 700px;
+}
+
+#slide:hover {
+   /* position: relative;*/
+    left: 700px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: white;
+    width: 180px;
+    margin: 0px 0px 0px 0px;
+    border: 2px solid #69b21d;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 700px;
+}
+#target {
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    display: none;
+}
+
+.li-toukou-span{
+    margin-bottom: 10px;
+}
+
+
+
+
+.user-log-in {
+margin-top: 150px;
+margin-left: 30px;
+}
+.ranking-moji {
+    text-align: center;
+    font-size: 18px;
+    padding: 0px;
+}
+
+.zenkoku1 {
+    background-color: #69b21d;
+    height: 70px;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+.zenkoku-ranking1{
+    margin: auto;
+    height: 140px;
+    width: 850px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.zenkoku-ranking2{
+    margin: auto;
+    height: 140px;
+    width: 850px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.zenkoku-ranking3{
+    margin: auto;
+    height: 140px;
+    width: 850px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.p-1111111{
+color:red;
+}
+
+@media screen and (max-width: 479px)
+
+{
+.zenkoku1 {
+    background-color: #69b21d;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.zenkoku-ranking3 {
+    margin: auto;
+    height: 140px;
+    width: 850px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+li-tiiki {
+    position: relative;
+    width: 120px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    float: left;
+    margin: 10px;
+    color: #69b21d;
+    display: block;
+}
+
+.moji-hokkaido {
+    display: inline-block;
+    margin: 40px 50px 50px 130px;
+    padding: 5px 10px;
+    color: #69b21d;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
