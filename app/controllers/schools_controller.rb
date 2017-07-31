@@ -77,7 +77,7 @@ def ranking
   # @ranking = product_ids.map{|id| School.find(id)}
 
    public_review = Review.where(public: 1).includes(:school)
-     product_ids = public_review.group(:school_id).order('average_rate DESC').limit(3).average(:rate).keys
+     product_ids = public_review.group(:school_id).order('average_rate DESC').limit(7).average(:rate).keys
      @ranking = product_ids.map{|id| School.find(id)}
 
 
@@ -86,7 +86,7 @@ def ranking
   # @ranking2 = product_ids.map{|id| School.find(id)}
 
   public_review = Review.where(public: 1).includes(:school)
-     product_ids = public_review.group(:school_id).order('count_school_id DESC').limit(3).count(:school_id).keys
+     product_ids = public_review.group(:school_id).order('count_school_id DESC').limit(7).count(:school_id).keys
      @ranking2 = product_ids.map{|id| School.find(id)}
 
   @drone = School.all
