@@ -11,9 +11,9 @@
        </span>
   </div>
   <div class="contens-hokkaido2">
-    <div class="inner-hokkaido">
+   <!--  <div class="inner-hokkaido">
     <h3 class="inner-moji">学校数：<%= @drone.count %>件</h3>
-    </div>
+    </div> -->
 
 <div class="inner-ranking111">
   <ul class="ul-ranking111" style="list-style:none;">
@@ -38,7 +38,7 @@
  <div class="hidari">
   <ul class="hokkaido-itiran" style="list-style:none;">
   <% @ranking.each.with_index(1) do |school, i| %>
-    <li class="hokkaido">
+    <span class="hokkaido">
     <img src="/assets/drone/<%= school.image %>" class="hokkaido-gazo">
        <a href="/schools/<%= school.id %>" class="hokkaido-link"><h5 class="hokkaido-moji"><%= school.name %></h5></a>
 
@@ -60,31 +60,31 @@
    <% end %>
 
    <% if school.license_2 == "運行管理" %>
-       <a href="/schools/license_2/" ><li class="botanman"><%= school.license_2 %></li>
+       <a href="/schools/license_2/" ><li class="botanman"><%= school.license_2 %></li></a>
    <% else %>
        <li class="license-none"></li>
    <% end %>
 
    <% if school.license_3 == "空撮" %>
-       <a href="/schools/license_3/" ><li class="botanman"><%= school.license_3 %></li>
+       <a href="/schools/license_3/" ><li class="botanman"><%= school.license_3 %></li></a>
    <% else %>
       <li class="license-none"></li>
    <% end %>
 
    <% if school.license_4 == "測量" %>
-       <a href="/schools/license_4/" ><li class="botanman"><%= school.license_4 %></li>
+       <a href="/schools/license_4/" ><li class="botanman"><%= school.license_4 %></li></a>
    <% else %>
       <li class="license-none"></li>
    <% end %>
 
    <% if school.license_5 == "農業" %>
-       <a href="/schools/license_5/" ><li class="botanman"><%= school.license_5 %></li>
+       <a href="/schools/license_5/" ><li class="botanman"><%= school.license_5 %></li></a>
    <% else %>
       <li class="license-none"></li>
    <% end %>
 
    </ul>
-</li>
+</span>
 <% end %>
 
 </ul>
@@ -97,7 +97,7 @@
 
   <ul class="hokkaido-itiran" style="list-style:none;">
     <% @ranking2.each.with_index(1) do |school, i| %>
-  <li class="hokkaido">
+  <span class="hokkaido">
     <img src="/assets/drone/<%= school.image %>" class="hokkaido-gazo">
          <a href="/schools/<%= school.id %>" class="hokkaido-link">
          <h5 class="hokkaido-moji"><%= school.name %></h5></a>
@@ -118,31 +118,31 @@
    <% end %>
 
    <% if school.license_2 == "運行管理" %>
-       <a href="/schools/license_2/" ><li class="botanman"><%= school.license_2 %></li>
+       <a href="/schools/license_2/" ><li class="botanman"><%= school.license_2 %></li></a>
    <% else %>
        <li class="license-none"></li>
    <% end %>
 
    <% if school.license_3 == "空撮" %>
-       <a href="/schools/license_3/" ><li class="botanman"><%= school.license_3 %></li>
+       <a href="/schools/license_3/" ><li class="botanman"><%= school.license_3 %></li></a>
    <% else %>
       <li class="license-none"></li>
    <% end %>
 
    <% if school.license_4 == "測量" %>
-       <a href="/schools/license_4/" ><li class="botanman"><%= school.license_4 %></li>
+       <a href="/schools/license_4/" ><li class="botanman"><%= school.license_4 %></li></a>
    <% else %>
       <li class="license-none"></li>
    <% end %>
 
    <% if school.license_5 == "農業" %>
-       <a href="/schools/license_5/" ><li class="botanman"><%= school.license_5 %></li>
+       <a href="/schools/license_5/" ><li class="botanman"><%= school.license_5 %></li></a>
    <% else %>
       <li class="license-none"></li>
    <% end %>
 
    </ul>
-  </li>
+  </span>
 <% end %>
 </ul>
 </div>
