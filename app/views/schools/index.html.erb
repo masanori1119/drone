@@ -118,8 +118,8 @@
      <% if school.reviews.present? %>
        <li class="ranking-star">
               <span class="wrap">
-              <i class="rate rate<%= school.reviews.average(:rate).round %>"></i></span>
-              <span class="ranking-ten"><%= school.reviews.where(public: true).average(:rate).round %>点 </span>
+              <i class="rate rate<%= school.reviews.where(public: true).average(:rate).round %>"></i></span>
+              <span class="ranking-ten"><%= school.reviews.where(public: true).average(:rate).round(1) %>点 </span>
        </li>
                 <p class="ranking-kutikomi">口コミ：<%=  school.reviews.where(public: true).length %>件</p>
      <% else %>

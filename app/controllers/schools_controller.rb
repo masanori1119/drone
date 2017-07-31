@@ -10,22 +10,9 @@ class SchoolsController < ApplicationController
 
 
     # 学校のランキング（平均評価順）を表示
-    # binding.pry
      public_review = Review.where(public: 1).includes(:school)
      product_ids = public_review.group(:school_id).order('average_rate DESC').limit(3).average(:rate).keys
      @ranking = product_ids.map{|id| School.find(id)}
-# product_ids = Review.group(:school_id)
-
-# product_ids.each do |data|
-#   data.each do |data1|
-#     if data1.pubic?
-#       data << data1
-#     end
-#   end
-# end
-
-# product_ids = product_ids..order('average_rate DESC').limit(3).average(:rate).keys
-#     @ranking = product_ids.map{|id| School.find(id)}
 
 
 
@@ -62,17 +49,11 @@ def show
     @drone = School.find(params[:id])
     # findは一つづ取得
 
+# コメント
+@comments = @drone.reviews.where(public: 1).page(params[:page]).per(1)
 
-@comments = @drone.reviews.where(public: 1)
-
-
-
-
-
-
+# 学校の全体評価
 @reviews = @drone.reviews.where(public: 1)
-
-
 
 
 
@@ -80,13 +61,6 @@ def show
     # 地図表示
     @map = School.find(params[:id])
   end
-
-
-
-
-
-
-
 
 
 
@@ -99,13 +73,23 @@ def search
 
 def ranking
   # 学校のランキング（平均評価順）を表示
-  product_ids = Review.group(:school_id).order('average_rate DESC').limit(5).average(:rate).keys
-  @ranking = product_ids.map{|id| School.find(id)}
-   # 学校のランキング（投稿数順）を表示
-  product_ids = Review.group(:school_id).order('count_school_id DESC').limit(5).count(:school_id).keys
-  @ranking2 = product_ids.map{|id| School.find(id)}
+  # product_ids = Review.group(:school_id).order('average_rate DESC').limit(5).average(:rate).keys
+  # @ranking = product_ids.map{|id| School.find(id)}
 
-  @drone = School.all 
+   public_review = Review.where(public: 1).includes(:school)
+     product_ids = public_review.group(:school_id).order('average_rate DESC').limit(3).average(:rate).keys
+     @ranking = product_ids.map{|id| School.find(id)}
+
+
+   # 学校のランキング（投稿数順）を表示
+  # product_ids = Review.group(:school_id).order('count_school_id DESC').limit(5).count(:school_id).keys
+  # @ranking2 = product_ids.map{|id| School.find(id)}
+
+  public_review = Review.where(public: 1).includes(:school)
+     product_ids = public_review.group(:school_id).order('count_school_id DESC').limit(3).count(:school_id).keys
+     @ranking2 = product_ids.map{|id| School.find(id)}
+
+  @drone = School.all
 end
 
 # 問い合わせ機能
