@@ -4,6 +4,14 @@
     border-radius: 10px;
 }
 
+.ranking-itiran222{
+    margin: 0 auto;
+    width: 800px;
+    height: 1400px;
+    padding: 0px;
+    background-color: white;
+}
+
 .ul-ranking111 {
     margin: 0 auto;
     width: 600px;
@@ -72,4 +80,5 @@
     background-color: white;
     margin: 0 auto;
 }
+
 }
