@@ -42,6 +42,18 @@
 color:red;
 }
 
+.li-takotako {
+    width: 120px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    float: left;
+    margin: 10px;
+    color: #69b21d;
+    display: block;
+}
+
 @media screen and (max-width: 479px)
 
 {
@@ -55,8 +67,8 @@ color:red;
 
 .zenkoku-ranking3 {
     margin: auto;
-    height: 140px;
-    width: 850px;
+    height: 100%;
+    width: 375px;
     padding-left: 0;
     overflow: hidden;
 }
@@ -74,13 +86,67 @@ li-tiiki {
     display: block;
 }
 
-.moji-hokkaido {
-    display: inline-block;
-    margin: 40px 50px 50px 130px;
-    padding: 5px 10px;
-    color: #69b21d;
+.zenkou-h1 {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.zenkoku1 {
+    background-color: #69b21d;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 375px;
+}
+
+.inner-moji {
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.li-takotako {
+    width: 80px;
+    padding: 10px;
+    border: 2px solid white;
     border-radius: 10px;
     background-color: #fff;
+    float: left;
+    margin: 10px;
+    color: #69b21d;
+    display: block;
+}
+
+.ranking-kutikomi {
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    color: #696969;
+}
+
+.ranking-moji {
+    text-align: center;
+    font-size: 14px;
+    padding: 0px;
+}
+
+.zenkoku-ranking1 {
+    margin: auto;
+    height: 100px;
+    width: 375px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.zenkoku-ranking2 {
+    margin: auto;
+    height: 100%;
+    width: 375px;
+    padding-left: 0;
+    overflow: hidden;
 }
 
 }

@@ -13,8 +13,10 @@
 <div class="kotei">
 <a href="/"><%= image_tag 'logo.png', class: "img-kotei" , :width => "300",:height => "100" %></a>
 
+<button type="botton" id="menubtn" class="menubtn111">
+</button>
 
-<ul class ="ul-kotei" style="list-style:none;">
+<ul class ="ul-kotei" id="menu" style="list-style:none;">
 
   <%= link_to "地域から探す", "/schools/zenkoku#page_school", class: "li-kotei" %>
   <%= link_to "学習内容から探す", "/#page_link1", class: "li-kotei" %>

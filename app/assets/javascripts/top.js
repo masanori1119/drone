@@ -14,6 +14,14 @@ $(window).on("load", function() {
 });
 
 
+// index menuの表示・非表示
+$(function(){
+
+$("#menubtn").click(function(){
+  $("#menu").slideToggle();
+});
+});
+
 //show.html.erb で使用（コメント表示）
 // jQuery(function($){
 //     $('#slide').click(function(){

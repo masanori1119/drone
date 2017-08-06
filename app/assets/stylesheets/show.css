@@ -237,3 +237,174 @@
 .li-toukou-span{
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 479px)
+
+{
+.main-gazo {
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.top-gazo {
+    width: 100%;
+    float: left;
+    margin-right: 20px;
+}
+
+.school-annai {
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 1400px;
+    width: 375px;
+}
+
+.syousai {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 10px 0px 20px;
+    width: 345px;
+}
+
+.table-main {
+    width: 100%;
+    height: 0px;
+    padding: 0px 0px 0px 0px;
+    border-spacing: 0px;
+    border-top: 1px solid #ccc;
+    margin: 15px 0px 0px 0px;
+}
+
+.table-main tr th {
+    font-weight: 700;
+    color: #fff;
+    background: #69b21d;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    width: 30%;
+}
+
+.table-main td {
+    color: #fff;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    width: 70%;
+    /* padding: 8px; */
+    color: gray;
+}
+
+.kuchikomi-itiran {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+    /* background-color: #f9fff9; */
+    /* border: 2px solid #f9fff9; */
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.hyouka-kotei {
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 20px;
+    border-bottom: 0px solid grey;
+}
+
+.kuchikomi-hyouka {
+    font-size: 14px;
+    color: #dc143c;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.kuchikomi-kensuu {
+    font-size: 14px;
+    color: #ff7f50;
+    font-weight: bolder;
+    margin-left: 0px;
+}
+
+#slide {
+    /* position: relative; */
+    /* left: 700px; */
+    padding: 2px;
+    border-radius: 5px;
+    width: 120px;
+    margin: 0px 0px 0px 190px;
+    border: 2px solid #69b21d;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    display: block;
+    /* margin-left: 700px; */
+}
+
+.bokeboushi {
+    margin: 0 auto;
+    width: 333px;
+    /* padding: 10px; */
+    border-bottom: 1px dotted #ccc;
+    border: 1px solid #efffef;
+    /* margin-bottom: 30px; */
+    margin-top: 20px;
+    /* border-radius: 10px; */
+    background-color: #f9fff9;
+    padding-left: 0px;
+    margin-right: 0px;
+    /* height: 100px; */
+    margin-left: 20px;
+    padding: 0px;
+}
+
+.kuchikomi-moji111 {
+    /* position: relative; */
+    padding: 0px 0px 0px 3px;
+    border-radius: 5px;
+    background-color: #2e8b57;
+    margin: 5px 0px 0px 0px;
+    border: 3px solid #2e8b57;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 10px;
+}
+
+.kuchikomi-moji {
+    font-size: 12px;
+    padding: 0px;
+    color: black;
+    font-weight: 200;
+}
+.good-point{
+font-size: 12px;
+}
+
+.bad-point{
+font-size: 12px;
+}
+
+.line-line {
+    width: 375px;
+    height: 20px;
+    border: 0px solid;
+    color: #69b21d;
+    background-color: #69b21d;
+    border-radius: 5px;
+    margin-top: 120px;
+}
+
+}

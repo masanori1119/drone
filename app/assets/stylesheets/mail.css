@@ -1,4 +1,4 @@
-.contens-toukou1{
+.contens-toukou1111{
     background-color: #69b21d;
     height: 100px;
     border-radius: 5px;
@@ -6,12 +6,12 @@
     margin-bottom: 50px;
 }
 
-.contens-toukou2{
+.contens-toukou2222{
     width: 770px;
     margin: 0 auto;
 }
 
-.contens-toukou3 {
+.contens-toukou3333 {
     display: inline-block;
     margin: 16px 0px 50px 0px;
     color: #69b21d;
@@ -36,7 +36,7 @@
     margin-right: auto;
 }
 
-.komento-folder{
+.komento-folder33{
    margin: 15px 0;
    width: 500px
 }
@@ -143,3 +143,79 @@
 .mail-finish-moji{
     font-size: 22px
 }
+
+
+
+
+
+
+@media screen and (max-width: 479px)
+
+{
+
+.komento-box-mail {
+    width: 375px;
+    background-color: #f5f5f5;
+    /* text-align: center; */
+    height: 700px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 0px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mail-moji {
+    font-weight: 700;
+    font-size: 16px;
+    /* width: 700px; */
+    /* text-align: center; */
+    /* margin-top: 30px; */
+    width: 375px;
+}
+
+.mail-komento {
+    width: 300px;
+    height: 30px;
+}
+
+.mail-komento-box {
+    width: 300px;
+    height: 300px;
+    margin: 20px 50px 0px 0px;
+}
+
+.contens-toukou1111 {
+    background-color: #69b21d;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.contens-toukou2222 {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.contens-toukou3333 {
+    display: inline-block;
+    margin: 16px 0px 50px 0px;
+    color: #69b21d;
+    border-radius: 10px;
+    width: 375px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.komento-folder33 {
+    margin: 15px 0;
+    width: 375px;
+}
+
+}
+
+

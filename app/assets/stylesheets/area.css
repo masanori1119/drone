@@ -107,15 +107,15 @@
 
 {
 .hokkaido {
-   /* position: relative;*/
-    width: 700px;
-    padding: 20px;
-    border: 3px solid #00c300;
+    /* position: relative; */
+    width: 353px;
+    padding: 10px;
+    border: 1px solid #00c300;
     border-radius: 5px;
     background-color: #fff;
-    float: left;
-    margin: 20px 10px 10px 25px;
-    height: 150px;
+    /* float: left; */
+    margin: 20px 0px 0px 0px;
+    height: 100px;
 }
 
 .hokkaido-itiran{
@@ -132,5 +132,44 @@
     width: 100%;
     margin: 30px 50px 10px 0px;
     border-radius: 10px;
+}
+
+.hokkaido-gazo {
+    width: 140px;
+    float: left;
+    margin-right: 10px;
+}
+
+.hokkaido-moji {
+    font-size: 12px;
+    padding: 0px;
+    color: green;
+}
+
+.inner-hyouka1 {
+    font-size: 14px;
+    color: #dc143c;
+    font-weight: bolder;
+}
+
+.inner-hyouka2 {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.botanman {
+    font-size: 12px;
+    margin: 7px 1px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    background: green;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.paginate {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
 }
 }

@@ -265,7 +265,6 @@ footer {
     width: 100%;
     height: 100%;
     padding: 0px;
-    background-color: black;
 }
 
 
@@ -504,6 +503,11 @@ a.ranking {
 }
 
 
+.menubtn111 {
+display: none;
+}
+
+
 
 
 
@@ -511,16 +515,37 @@ a.ranking {
 @media screen and (max-width: 479px)
 
 {
+body {
+    background-color: white;
+    font-size: 14px;
+    color: #333;
+    margin: 0 auto;
+    min-width: 375px;
+}
+
+
+.img-kotei {
+    /* float: left; */
+    width: 300px;
+    height: auto;
+    /* margin: 30px 40px 20px 30px; */
+    margin: 30px 40px 0px;
+}
 
 .li-kotei {
-    width: 7%;
+    width: 100px;
     padding: 5px 10px 10px 10px;
-    height: 30px;
-    margin: 30px 5px 0px 0px;
-    color: #69b21d;
+    height: 10px;
+    /* margin: 30px 5px 0px 0px; */
+    /* color: #69b21d; */
     font-weight: bolder;
     text-align: center;
-    font-size: 12px;
+    font-size: 4px;
+    margin: 0px;
+    background-color: white;
+    border: 0px;
+    text-align: left;
+    border-radius: 0px;
 }
 
 .li-kotei:hover{
@@ -532,27 +557,71 @@ a.ranking {
     font-weight: bolder;
     text-align: center;
     font-size: 12px;
+    display: none;
 }
 
 .ul-kotei {
     margin: 0px;
-    width: 100%;
-    height: 100%;
+    width: 20px;
+    height: 100px;
     padding: 0px;
-    vertical-align: middle;
-    /* display: table-cell; */
+    /* vertical-align: middle; */
+    display: table-cell;
+    display: none;
     /* text-align: center; */
+    /* margin-left: 100px; */
+    margin-left: 255px;
 }
 
 .kotei {
-    background-color: white;
-    height: 100px;
+   background-color: white;
+    height: 80px;
     margin: 0px;
+    width: 375px;
 }
 
+.menubtn111 {
+    display: inline-block;
+    /* overflow: hidden; */
+    position: relative;
+    width: 24px;
+    height: 0;
+    padding-top: 18px;
+    border-color: #dcdcdc;
+    margin-left: 345px;
+    margin-bottom: 10px;
+}
 
+.menubtn111::before,
+.menubtn111::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 0;
+    border-top: 3px solid #fff;
+}
+
+.menubtn111::before {
+    top: 4px;
+}
+
+.menubtn111::after {
+    bottom: 4px;
+}
 
 /*index*/
+
+.navbar {
+    height: 180px;
+    margin: 0 auto;
+    background-color: #f6f5f6;
+}
+
+.h3-ranking {
+    font-size: 20px;
+    text-align: center;
+}
 
 .ul-ranking3 {
     margin: 0 auto;
@@ -566,8 +635,8 @@ a.ranking {
 
 .ul-ranking2 {
     margin: auto;
-    height: 300px;
-    width: 940px;
+    height: 1000px;
+    width: 305px;
     padding-left: 0;
     overflow: hidden;
 }
@@ -584,8 +653,7 @@ a.ranking {
 }
 
 .ranking-tuzuki {
-    // position: relative;
-    width: 250px;
+    width: 130px;
     padding: 7px;
     border-radius: 10px;
     background-color: #ffa500;
@@ -594,7 +662,13 @@ a.ranking {
     color: white;
     font-weight: bolder;
     text-align: center;
-    margin-left: 750px;
+    /* margin-left: 750px; */
+    font-size: 10px;
+}
+
+.center-content {
+    height: 1010px;
+    background-color: #f6f5f6;
 }
 
 .li-toukou {
@@ -608,57 +682,85 @@ a.ranking {
     margin: 20px 5px 0px 5px;
 }
 
+.left-content {
+    height: 1080px;
+    background-color: white;
+}
+
 .ul-ranking1 {
-    margin: auto;
-    height: 350px;
-    width: 950px;
+    margin-left: 30px;
+    height: 1050px;
+    width: 345px;
     padding-left: 0;
     overflow: hidden;
 }
 
 .kensaku {
     margin: auto;
-    height: 120px;
-    width: 880px;
+    height: 800px;
+    width: 315px;
     padding-left: 0;
     overflow: hidden;
 }
 
 .kensaku1 {
     width: 300px;
-    margin: 26px 4px 0px 0px;
+    margin: 5px 4px 0px 0px;
     padding: 0;
     background-color: #ffffff;
     border: none;
     color: grey;
-    height: 60px;
+    height: 30px;
     border-radius: 10px;
-    font-size: 22px;
+    font-size: 14px;
     text-align: center;
-    font-weight: 100;
+    /* font-weight: 100; */
     border: 5px solid #69b21d;
-    float: left;
-
+    /* float: left; */
 }
 
 .kensaku2 {
-    width: 250px;
-    margin: 33px 4px 0px 0px;
+    width: 310px;
+    margin: 15px 4px 0px 0px;
     background-color: #ffffff;
     border: none;
     color: #000000;
     height: 55px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     font-weight: 0;
     color: gray;
     border: 5px solid #69b21d;
     float: left;
+    height: 40px;
 }
 
+.batubatu {
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+    /* float: left; */
+    display: none;
+}
+
+.kensaku-botan {
+    cursor: pointer;
+    width: 150px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #696969;
+    margin: 10px 15px 0px 80px;
+    border: 1px solid white;
+    color: white;
+    /* font-weight: 700; */
+    text-align: center;
+    height: 40px;
+    font-size: 16px;
+}
+
+
 header {
-    height: 300px;
+    height: 100px;
     text-align: center;
     background-color: #f6f5f6;
     /* width: 1000px; */
@@ -673,7 +775,20 @@ header {
 .right-content {
     height: 450px;
     background-color: #f8f4e6;
+    display: none;
 }
+
+.botom-content {
+    height: 370px;
+    background-color: #f8f4e6;
+    display: none;
+}
+
+.copy-right {
+    font-size: 10px;
+    text-align: center;
+}
+
 
 }
 

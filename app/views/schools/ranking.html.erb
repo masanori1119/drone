@@ -7,7 +7,7 @@
 <body>
   <div class ="contens-hokkaido">
        <span class ="moji-hokkaido">
-       <h1>学校一覧</h1>
+       <h1 class="ranking-h1">学校一覧</h1>
        </span>
   </div>
   <div class="contens-hokkaido2">
@@ -36,7 +36,7 @@
 
 
  <div class="hidari">
-  <ul class="hokkaido-itiran" style="list-style:none;">
+  <ul class="ranking-itiran222" style="list-style:none;">
   <% @ranking.each.with_index(1) do |school, i| %>
     <span class="hokkaido">
     <img src="/assets/drone/<%= school.image %>" class="hokkaido-gazo">
