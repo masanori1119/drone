@@ -68,7 +68,7 @@ color:red;
 .zenkoku-ranking3 {
     margin: auto;
     height: 100%;
-    width: 375px;
+    width: 100%;
     padding-left: 0;
     overflow: hidden;
 }
@@ -97,7 +97,7 @@ li-tiiki {
     margin: 0 auto;
     border-radius: 10px;
     margin-top: 50px;
-    width: 375px;
+    width: 100%;
 }
 
 .inner-moji {
@@ -136,7 +136,7 @@ li-tiiki {
 .zenkoku-ranking1 {
     margin: auto;
     height: 100px;
-    width: 375px;
+    width: 100%;
     padding-left: 0;
     overflow: hidden;
 }
@@ -144,7 +144,7 @@ li-tiiki {
 .zenkoku-ranking2 {
     margin: auto;
     height: 100%;
-    width: 375px;
+    width: 100%;
     padding-left: 0;
     overflow: hidden;
 }
