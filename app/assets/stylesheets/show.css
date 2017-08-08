@@ -195,7 +195,7 @@
 
 /*コメント機能*/
 
-#slide {
+.slide1 {
     /*position: relative;*/
     left: 700px;
     padding: 7px;
@@ -212,7 +212,7 @@
     margin-left: 700px;
 }
 
-#slide:hover {
+.slide1:hover {
    /* position: relative;*/
     left: 700px;
     padding: 7px;
@@ -266,7 +266,7 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
-    height: 1400px;
+    height: 1600px;
     width: 375px;
 }
 
@@ -336,8 +336,25 @@
     margin-left: 0px;
 }
 
-#slide {
+.slide1 {
     /* position: relative; */
+    /* left: 700px; */
+    padding: 2px;
+    border-radius: 5px;
+    width: 120px;
+    margin: 0px 0px 0px 190px;
+    border: 2px solid #69b21d;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    display: block;
+    /* margin-left: 700px; */
+}
+
+.slide1:hover {
+   /* position: relative; */
     /* left: 700px; */
     padding: 2px;
     border-radius: 5px;

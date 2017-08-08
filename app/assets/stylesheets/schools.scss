@@ -297,6 +297,35 @@ footer {
     font-size: 12px;
 }
 
+.li-kotei7{
+    width: 130px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    float: left;
+    margin: 40px 5px 0px 5px;
+    border: 2px solid #00c300;
+    color: #69b21d;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+}
+
+.li-kotei:hover7{
+    // position: relative;
+    width: 130px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #00c300;
+    float: left;
+    margin: 40px 5px 0px 5px;
+    border: 2px solid #00c300;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+}
+
 .img-kotei{
     float: left;
     width: 300px;
@@ -525,11 +554,11 @@ body {
 
 
 .img-kotei {
-    /* float: left; */
-    // width: 300px;
     height: auto;
-    /* margin: 30px 40px 20px 30px; */
-    margin: 30px 40px 0px;
+    /* margin: 30px 30px 0px; */
+    /* margin: 0 auto; */
+    margin-bottom: 0px;
+    width: 270px;
 }
 
 .li-kotei {
@@ -562,6 +591,40 @@ body {
     border: 0px;
     text-align: left;
     border-radius: 0px;
+}
+
+.li-kotei7 {
+    width: 150px;
+    padding: 5px 10px 10px 10px;
+    height: 15px;
+    /* margin: 30px 5px 0px 0px; */
+    /* color: #69b21d; */
+    font-weight: bolder;
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+    background-color: white;
+    border: 0px;
+    text-align: left;
+    border-radius: 0px;
+    display: none;
+}
+
+.li-kotei7:hover{
+    width: 150px;
+    padding: 5px 10px 10px 10px;
+    height: 15px;
+    /* margin: 30px 5px 0px 0px; */
+    /* color: #69b21d; */
+    font-weight: bolder;
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+    background-color: gray;
+    border: 0px;
+    text-align: left;
+    border-radius: 0px;
+    display: none;
 }
 
 .ul-kotei {
@@ -798,6 +861,7 @@ header {
 
 
 }
+
 
 
 

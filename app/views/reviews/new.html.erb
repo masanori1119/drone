@@ -24,14 +24,23 @@
             <%= f.text_field :nickname, placeholder: '名前を入力してください。', value: '', class: "komento-nickname" %>
           </div>
 
-          <div class="komento-folder">
+          <!-- <div class="komento-folder">
             <%= f.label :評価, style: { 'margin-right' => 8 } %>
             <%= f.number_field :rate, placeholder: '評価', step: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } , class: "komento-rate" %>
+          </div> -->
+
+          <div class="komento-folder">
+            <%= f.label :評価, style: { 'margin-right' => 8 } %>
+            <span class="review1111">
+         <%= f.select :Position, １: '1', ２: "2" , ３: '3', ４: "4" , ５: '5', ６: "6" , ７: '7', ８: "8" , ９: '9', １０: "10"  %>
+          </span>
           </div>
 
            <div class="komento-folder">
           <%= f.label :立場, style: { 'margin-right' => 8 } %>
-          <%= f.select :Position, 在校生: '在校生', 卒業生: "卒業生" , 学校説明会参加: '学校説明会参加'%>
+          <span class="review1111">
+          <%= f.select :Position, 在校生: '在校生', 卒業生: "卒業生" , 学校説明会参加: '学校説明会参加' %>
+          </span>
           </div>
 
           <div class="komento-folder">
