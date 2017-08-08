@@ -533,14 +533,14 @@ body {
 }
 
 .li-kotei {
-    width: 100px;
+    width: 150px;
     padding: 5px 10px 10px 10px;
-    height: 10px;
+    height: 15px;
     /* margin: 30px 5px 0px 0px; */
     /* color: #69b21d; */
     font-weight: bolder;
     text-align: center;
-    font-size: 4px;
+    font-size: 14px;
     margin: 0px;
     background-color: white;
     border: 0px;
@@ -549,16 +549,16 @@ body {
 }
 
 .li-kotei:hover{
-    width: 100px;
+    width: 150px;
     padding: 5px 10px 10px 10px;
-    height: 10px;
+    height: 15px;
     /* margin: 30px 5px 0px 0px; */
     /* color: #69b21d; */
     font-weight: bolder;
     text-align: center;
-    font-size: 4px;
+    font-size: 14px;
     margin: 0px;
-    background-color: white;
+    background-color: gray;
     border: 0px;
     text-align: left;
     border-radius: 0px;
@@ -574,7 +574,7 @@ body {
     display: none;
     /* text-align: center; */
     /* margin-left: 100px; */
-    margin-left: 255px;
+    margin-left: 205px;
 }
 
 .kotei {
@@ -588,12 +588,13 @@ body {
     display: inline-block;
     /* overflow: hidden; */
     position: relative;
-    width: 24px;
-    height: 0;
+    width: 34px;
+    height: 34px;
     padding-top: 18px;
-    border-color: #dcdcdc;
-    margin-left: 315px;
+    border-color: grey;
+    margin-left: 310px;
     margin-bottom: 10px;
+    background-color: gray;
 }
 
 .menubtn111::before,
@@ -607,11 +608,13 @@ body {
 }
 
 .menubtn111::before {
-    top: 4px;
+    top: 7px;
+    left: 5px;
 }
 
 .menubtn111::after {
-    bottom: 4px;
+    bottom: 7px;
+    left: 5px;
 }
 
 /*index*/
