@@ -1,3 +1,32 @@
+.contens-gaidorain {
+    background-color: #69b21d;
+    height: 75px;
+    border-radius: 5px;
+    margin-top: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+.moji-gaidorain {
+    display: inline-block;
+    /* margin: 8px 0px 0px 30px; */
+    padding: 0px 10px;
+    color: #69b21d;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    /* width: 220px; */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gaidorain-h1{
+    padding: 5px 0;
+    margin: 0;
+}
+
+
+
 .gaido-main{
     margin-bottom: 30px;
 }
@@ -85,7 +114,6 @@
 /*youtube の位置調整*/
 .youtube-center{
     text-align: center;
-    margin: 40px;
 }
 
 .lineman{
@@ -102,11 +130,79 @@
     padding: 30px 1em;
     margin: 2em 0;
     border: double 5px gray;
-    height: 6500px;
-    width: 900px;
+    min-height: 1000px;
+    width: 85%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 20px;
     background: white;
 }
+
+.contens-gaidorain {
+    background-color: white;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+.moji-gaidorain {
+    display: inline-block;
+    /* margin: 8px 0px 0px 30px; */
+    padding: 0px 10px;
+    color: #69b21d;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 8px;
+    /* width: 220px; */
+    text-align: center;
+    margin-top: 7px;
+}
+
+.gaidorain-h1{
+    padding: 5px 0;
+    margin: 0;
+}
+
+.gaido-contens-moji1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: whitesmoke;
+    border-left: solid 10px grey;
+    font-size: 14px;
+}
+
+.gaido-contens-moji2 {
+    font-size: 12px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+}
+
+.gaido-contens-moji3 {
+    padding-bottom: 0px;
+    /* font-weight: 700; */
+    margin-left: 10px;
+    padding: 0px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.gaido-contens-moji5 {
+    padding-bottom: 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.gaido-contens-moji4 {
+    font-size: 12px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+    line-height: 100px;
+    text-align: right;
+}
+
 
 }
