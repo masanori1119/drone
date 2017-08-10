@@ -95,7 +95,7 @@
     height: 50px;
 }
 
-@media screen and (max-width: 479px)
+@media screen and (max-width: 768px)
 
 {
 .gaido-contens {

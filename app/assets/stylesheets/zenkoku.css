@@ -54,7 +54,7 @@ color:red;
     display: block;
 }
 
-@media screen and (max-width: 479px)
+@media screen and (max-width: 768px)
 
 {
 .zenkoku1 {

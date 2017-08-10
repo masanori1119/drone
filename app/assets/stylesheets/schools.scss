@@ -260,9 +260,19 @@ footer {
     z-index: 3;
 }
 
-   .ul-kotei {
-    margin: 0px;
+.kotei {
+    background-color: white;
+    position: fixed;
+    height: 100px;
     width: 100%;
+    margin: 0px;
+    top: 0px;
+    z-index: 3;
+}
+
+.ul-kotei {
+    margin: 0px;
+    width: 1500px;
     height: 100%;
     padding: 0px;
 }
@@ -541,7 +551,7 @@ display: none;
 
 
 
-@media screen and (max-width: 479px)
+@media screen and (max-width: 768px)
 
 {
 body {
@@ -549,7 +559,7 @@ body {
     font-size: 14px;
     color: #333;
     margin: 0 auto;
-    min-width: 345px;
+    min-width: 0px;
 }
 
 
@@ -557,12 +567,16 @@ body {
     height: auto;
     /* margin: 30px 30px 0px; */
     /* margin: 0 auto; */
+    /* margin-bottom: 0px; */
+    /* width: 270px; */
+    /* margin: 0px; */
+    /* margin: 0 auto; */
     margin-bottom: 0px;
-    width: 270px;
+    margin-left: 0px;
 }
 
 .li-kotei {
-    width: 150px;
+    width: 160px;
     padding: 5px 10px 10px 10px;
     height: 15px;
     /* margin: 30px 5px 0px 0px; */
@@ -578,7 +592,7 @@ body {
 }
 
 .li-kotei:hover{
-    width: 150px;
+    width: 160px;
     padding: 5px 10px 10px 10px;
     height: 15px;
     /* margin: 30px 5px 0px 0px; */
@@ -629,22 +643,26 @@ body {
 
 .ul-kotei {
     margin: 0px;
-    width: 20px;
-    height: 100px;
+    width: 180px;
+    /* height: 10px; */
     padding: 0px;
-    /* vertical-align: middle; */
     display: table-cell;
     display: none;
-    /* text-align: center; */
-    /* margin-left: 100px; */
-    margin-left: 205px;
+    float: right;
 }
 
 .kotei {
-   background-color: white;
-    height: 80px;
-    margin: 0px;
+    background-color: white;
+    height: 120px;
+    /* margin: 0 auto; */
     width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    /* margin-left: auto; */
+    /* max-width: 370px; */
 }
 
 .menubtn111 {
@@ -655,9 +673,12 @@ body {
     height: 34px;
     padding-top: 18px;
     border-color: grey;
-    margin-left: 310px;
+    /* margin-left: 300px; */
     margin-bottom: 10px;
     background-color: gray;
+    /* margin-top: 80px; */
+    /* margin-right: auto; */
+    float: right;
 }
 
 .menubtn111::before,
@@ -758,9 +779,9 @@ body {
 }
 
 .ul-ranking1 {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     height: 1050px;
-    width: 345px;
+    width: 320px;
     padding-left: 0;
     overflow: hidden;
 }

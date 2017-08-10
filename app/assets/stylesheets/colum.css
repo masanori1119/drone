@@ -107,7 +107,7 @@ color:#4169e1;
 
 
 
-@media screen and (max-width: 479px)
+@media screen and (max-width: 768px)
 
 {
 .hajimete-contens {
@@ -136,7 +136,7 @@ color:#4169e1;
     height: 2070px;
     background-color: #f9fff9;
     /* padding: 100px; */
-    width: 375px;
+    width: 100%;
     padding: 0px;
 }
 
@@ -151,7 +151,9 @@ color:#4169e1;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 20px;
-    width: 275px;
+    width: 95%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .colom-categori-moji {
@@ -172,13 +174,15 @@ color:#4169e1;
     border: solid 5px #efffef;
     border-radius: 3px 0 3px 0;
     height: 350px;
-    width: 275px;
+    width: 95%;
     /* margin: 0px auto; */
     color: #4169e1;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 20px;
     margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .colom-contens-moji1 {

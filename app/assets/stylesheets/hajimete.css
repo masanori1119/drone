@@ -58,12 +58,12 @@
 }
 
 
-@media screen and (max-width: 479px)
+@media screen and (max-width: 768px)
 
 {
 
 .gaidorain-main {
-    width: 375px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -82,19 +82,7 @@
     margin: 30px 40px 20px 30px;
 }
 
-.ul-kotei {
-    margin: 0px;
-    /* width: 100%; */
-    /* height: 100%; */
-    padding: 0px;
-    vertical-align: middle;
-    /* display: table-cell; */
-    /* text-align: center; */
-    background-color: white;
-    height: 50px;
-    width: 375px;
-    display: none;
-}
+
 
 .contens-hokkaido {
     background-color: #69b21d;
@@ -124,17 +112,17 @@
     /* padding: 0.25em 1em; */
     border: none;
     border-radius: 3px 0 3px 0;
-    height: 1000px;
-    width: 365px;
+    height: 850px;
+    width: 100%;
     background-color: white;
     padding: 0px;
     margin-top: 20px;
 }
 
 .hajimete-main {
-    width: 375px;
+    width: 100%;
     /* margin: 0 auto; */
-    height: 1020px;
+    height: 850px;
     margin: 0px;
 }
 
@@ -143,7 +131,7 @@
     height: 150px;
     border-radius: 5px;
     height: 10px;
-    width: 375px;
+    width: 100%;
 }
 
 .hajimete-h1 {
@@ -152,7 +140,7 @@
 }
 
 .hajimete-contens-moji1 {
-    font-size: 20px;
+    font-size: 18px;
     /* text-align: center; */
     margin-bottom: 50px;
     margin-top: 40px;
@@ -170,6 +158,27 @@
 .hajimete-contens-moji3 {
     font-size: 16px;
     color: #69b21d;
+}
+
+.hajimete-contens:before,.hajimete-contens:after
+{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: solid 2px #69b21d;
+    border-radius: 50%;
+    display: none;
+}
+.hajimete-contens:after {
+    top: -16px;
+    left: -12px;
+    display: none;
+}
+.hajimete-contens:before {
+    bottom: -12px;
+    right: -16px;
+    display: none;
 }
 
 }

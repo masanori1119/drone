@@ -15,27 +15,26 @@
     margin: 0 auto;
     padding: 20px 20px 20px 20px;
     background-color: white;
-    height: 410px;
-    border: 1px solid gray;
+    /*height: 410px;
+    border: 1px solid gray;*/
     border-radius: 5px;
     margin-top: 30px;
   }
 
 
-.school-annai{
+.school-annai {
     box-sizing: border-box;
     min-width: 320px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
-    height: 1600px;
-
-  }
+    height: 70%;
+}
 
 
 .top-gazo{
   width: 100%;
-  float: left;
+  /*float: left;*/
   margin-right: 20px;
 }
 
@@ -238,43 +237,60 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 479px)
+@media screen and (max-width: 768px)
 
 {
 .main-gazo {
+    /* box-sizing: border-box; */
+    min-width: 0px;
+    max-width: 0px;
+    /* margin: 0 auto; */
+    /* padding: 20px 20px 20px 20px; */
+    /* background-color: white; */
+    /* height: 100%; */
+    /* border: 1px solid gray; */
+    /* border-radius: 5px; */
+    /* margin-top: 30px; */
+    /* width: 95%; */
+    /* display: none; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-top: 20px;
+    text-align: center;
     box-sizing: border-box;
     min-width: 320px;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px 20px 20px 20px;
+    padding: 0px
     background-color: white;
-    height: 200px;
     border: 1px solid gray;
     border-radius: 5px;
     margin-top: 30px;
 }
 
 .top-gazo {
-    width: 100%;
-    float: left;
-    margin-right: 20px;
+    width: 90%;
+    /* height: 100%; */
+    float: none;
+    margin-right: 0px;
+    /* margin: 0 auto; */
 }
 
 .school-annai {
     box-sizing: border-box;
     min-width: 320px;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
-    height: 1600px;
+    height: 70%;
     width: 375px;
 }
 
 .syousai {
     font-size: 20px;
     font-weight: 700;
-    margin: 30px 10px 0px 20px;
-    width: 345px;
+    margin: 30px 0px 0px 0px;
+    width: 100%;
 }
 
 .table-main {
@@ -320,6 +336,7 @@
     margin: 0px 0px 0px 0px;
     padding-bottom: 20px;
     border-bottom: 0px solid grey;
+    padding-left: 0px;
 }
 
 .kuchikomi-hyouka {
@@ -351,6 +368,7 @@
     cursor: pointer;
     display: block;
     /* margin-left: 700px; */
+    float: right;
 }
 
 .slide1:hover {
@@ -368,11 +386,12 @@
     cursor: pointer;
     display: block;
     /* margin-left: 700px; */
+    float: right;
 }
 
 .bokeboushi {
     margin: 0 auto;
-    width: 333px;
+    width: 100%;
     /* padding: 10px; */
     border-bottom: 1px dotted #ccc;
     border: 1px solid #efffef;
@@ -383,7 +402,7 @@
     padding-left: 0px;
     margin-right: 0px;
     /* height: 100px; */
-    margin-left: 20px;
+    margin-left: 0px;
     padding: 0px;
 }
 
@@ -415,7 +434,7 @@ font-size: 12px;
 }
 
 .line-line {
-    width: 375px;
+    width: 100%;
     height: 20px;
     border: 0px solid;
     color: #69b21d;
