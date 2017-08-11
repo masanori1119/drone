@@ -50,7 +50,7 @@ def show
     # findは一つづ取得
 
 # コメント
-@comments = @drone.reviews.where(public: 1).page(params[:page]).per(1)
+@comments = @drone.reviews.where(public: 1).page(params[:page]).per(5)
 
 # 学校の全体評価
 @reviews = @drone.reviews.where(public: 1)

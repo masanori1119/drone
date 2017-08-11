@@ -21,9 +21,9 @@
        <a href="/schools/<%= school.id %>" class="hokkaido-link"><h5 class="hokkaido-moji"><%= school.name %></h5></a>
 <!-- 以下、平均点表示 -->
 <% if school.reviews.present? %>
-       <span class="wrap"><i class="rate rate<%= school.reviews.average(:rate).round %>"></i></span>
-       <span class="inner-hyouka1"><%= school.reviews.average(:rate).round %>点</span><br>
-       <span class="inner-hyouka2"><%= school.reviews.count(:rate) %>件</span><br>
+       <span class="wrap"><i class="rate rate<%= school.reviews.where(public: true).average(:rate).round %>"></i></span>
+       <span class="inner-hyouka1"><%= school.reviews.where(public: true).average(:rate).round(1) %>点</span><br>
+       <span class="inner-hyouka2"><%=  school.reviews.where(public: true).length %>件</span><br>
  <% else %>
        <span class="wrap"><i class="rate rate0"></i></span>
         <span class="inner-hyouka2">口コミ：<%= school.reviews.count(:rate) %>件</span>

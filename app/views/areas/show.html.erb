@@ -31,9 +31,9 @@
 
 <!-- 以下、平均点表示 -->
 <% if school.reviews.present? %>
-     <span class="wrap"><i class="rate rate<%= school.reviews.average(:rate).round %>"></i></span>
-     <span class="inner-hyouka1"><%= school.reviews.average(:rate).round %>点</span>
-     <span class="inner-hyouka2">口コミ：<%= school.reviews.count(:rate) %>件</span>
+     <span class="wrap"><i class="rate rate<%= school.reviews.where(public: true).average(:rate).round %>"></i></span>
+     <span class="inner-hyouka1"><%= school.reviews.where(public: true).average(:rate).round(1) %>点</span>
+     <span class="inner-hyouka2">口コミ：<%=  school.reviews.where(public: true).length %>件</span>
  <% else %>
     <span class="wrap"><i class="rate rate0"></i></span>
      <span class="inner-hyouka2">口コミ：<%= school.reviews.count(:rate) %>件</span>
