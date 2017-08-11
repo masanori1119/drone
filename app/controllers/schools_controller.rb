@@ -9,6 +9,7 @@ class SchoolsController < ApplicationController
 
 
 
+
     # 学校のランキング（平均評価順）を表示
      public_review = Review.where(public: 1).includes(:school)
      product_ids = public_review.group(:school_id).order('average_rate DESC').limit(3).average(:rate).keys
@@ -68,6 +69,9 @@ def show
 def search
   # 検索機能
     @drone = School.where("(name LIKE(?)) and (prefecture LIKE(?))", "%#{params[:keyword]}%", "%#{params[:keyword1]}%").page(params[:page]).per(7)
+
+     @drone1 = School.where("(name LIKE(?)) and (prefecture LIKE(?))", "%#{params[:keyword]}%", "%#{params[:keyword1]}%")
+
     @schools = School.where(id: params[:id])
   end
 
@@ -122,22 +126,33 @@ end
 
 def license
 @sousa = School.where(license:"操縦").page(params[:page]).per(5)
+
+@sousa1 = School.where(license:"操縦")
 end
 
 def license_2
 @kanri = School.where(license_2:"運行管理").page(params[:page]).per(5)
+
+@kanri1 = School.where(license_2:"運行管理")
+
 end
 
 def license_3
 @kuusatsu = School.where(license_3:"空撮").page(params[:page]).per(5)
+
+@kuusatsu1 = School.where(license_3:"空撮")
 end
 
 def license_4
 @sokuryou = School.where(license_4:"測量").page(params[:page]).per(5)
+
+@sokuryou1 = School.where(license_4:"測量")
 end
 
 def license_5
 @nougyou = School.where(license_5:"農業").page(params[:page]).per(5)
+
+@nougyou1 = School.where(license_5:"農業")
 end
 
 
