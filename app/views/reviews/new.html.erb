@@ -32,6 +32,14 @@
           </span>
           </div>
 
+          <div class="komento-folder">
+          <%= f.label :性別, style: { 'margin-right' => 8 } %>
+          <span class="review1111">
+          <%= f.select :Position, 男性: '男性', 女性: "女性" %>
+          </span>
+          </div>
+
+
            <div class="komento-folder">
           <%= f.label :立場, style: { 'margin-right' => 8 } %>
           <span class="review1111">
@@ -41,12 +49,12 @@
 
           <div class="komento-folder">
           <%= f.label :学校の良いところ, style: { 'margin-right' => 8 } %>
-          <%= f.text_area :good, placeholder: 'コメントをお願いします。', class: "komento-good" %>
+          <%= f.text_area :good, placeholder: 'コメントは最低２０文字以上入力をお願いします。', class: "komento-good" %>
           </div>
 
           <div class="komento-folder">
           <%= f.label :改善して欲しい・気になったところ, style: { 'margin-right' => 8 } %>
-          <%= f.text_area :bad, placeholder: 'コメントをお願いします。', class: "komento-good" %>
+          <%= f.text_area :bad, placeholder: 'コメントは最低２０文字以上入力をお願いします。', class: "komento-good" %>
           </div>
 
           <div class="row">
@@ -57,6 +65,10 @@
             </div>
           </div>
            <% end %>
+<div class="modoru-link">
+<a href="/schools/<%= @drone.id %>">
+<<学校の詳細ページに戻る>></a>
+</div>
 </div>
 <!-- 投稿機能 ここまで -->
 
