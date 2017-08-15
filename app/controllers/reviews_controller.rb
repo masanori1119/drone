@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
 
     # Review.create(create_params)
     Review.create(create_params)
-    PostMailer.post_mail(create_params[:nickname],create_params[:rate],create_params[:sex],create_params[:Position],create_params[:good],create_params[:bad]).deliver
+    PostMailer.post_mail(create_params[:nickname],create_params[:rate],create_params[:good],create_params[:bad]).deliver
   end
 
   private
