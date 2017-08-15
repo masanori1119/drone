@@ -29,7 +29,7 @@
         <span class="inner-hyouka2">口コミ：<%= school.reviews.count(:rate) %>件</span>
 <% end %>
 
-<ul style="list-style:none;">
+<ul class="license-box" style="list-style:none;">
    <% if school.license == "操縦" %>
        <a href="/schools/license/"><li class="botanman"><%= school.license %></li></a>
    <% else %>

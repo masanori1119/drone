@@ -110,6 +110,7 @@
 }
 
 
+
 @media screen and (max-width: 768px)
 
 {
@@ -198,4 +199,9 @@
     margin: 30px 50px 10px 0px;
     border-radius: 10px;
 }
+
+.license-box {
+    margin-left: 110px;
+}
+
 }

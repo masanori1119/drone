@@ -86,10 +86,11 @@ def ranking
 
 
    # 学校のランキング（投稿数順）を表示
-  # product_ids = Review.group(:school_id).order('count_school_id DESC').limit(5).count(:school_id).keys
+  # product_ids = Review.group(:school_id).order('count_school_id DESC').limit(7).count(:school_id).keys
   # @ranking2 = product_ids.map{|id| School.find(id)}
 
-  public_review = Review.where(public: 1).includes(:school)
+
+  public_review = Review.where(public: 1)
      product_ids = public_review.group(:school_id).order('count_school_id DESC').limit(7).count(:school_id).keys
      @ranking2 = product_ids.map{|id| School.find(id)}
 
