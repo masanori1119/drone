@@ -77,6 +77,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  # replace this with your tracker code
+  GA.tracker = "UA-91389734-1"
 
   config.action_mailer.smtp_settings = {
   address:               'smtp.gmail.com',

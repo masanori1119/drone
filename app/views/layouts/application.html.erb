@@ -8,6 +8,7 @@
 <!-- ビューポートの設定 -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
 <%= favicon_link_tag %>
+<%= analytics_init if Rails.env.production? %>
 </head>
 
 <body>

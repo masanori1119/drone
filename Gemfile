@@ -54,6 +54,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'rails_admin'
 gem 'dotenv-rails'
+gem 'google-analytics-rails'
 
 group :production do
   gem 'rails_12factor'
