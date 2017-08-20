@@ -1,3 +1,14 @@
+// コメントの文字数制限（投稿ページ）
+function ShowLength( str ) {
+   document.getElementById("inputlength").innerHTML = "現在" + str.length + "文字(20文字以上入力してください。）";
+}
+
+function ShowLength2( str ) {
+   document.getElementById("inputlength2").innerHTML = "現在" + str.length + "文字(20文字以上入力してください。）";
+}
+
+
+
 //ranking.html.erb で使用
 $(window).on("load", function() {
 //load(ページを読み込むと起動)

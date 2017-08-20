@@ -14,10 +14,20 @@
 
 <!-- 投稿機能 -->
  <div  class="komento-box">
-         <%= form_for [@drone, @review] do |f| %>
+
+
+<%= form_for [@drone, @review] do |f| %>
+
+
+
           <div class="komento-folder">
             <%= f.label :名前 %>
             <%= f.text_field :nickname, placeholder: '名前を入力してください。', value: '', class: "komento-nickname" %>
+    <% if @review.errors.any? %>
+    <li class="keikoku-li">
+    <%= @review.errors.messages[:nickname][0] %>
+    </li>
+    <% end %>
           </div>
 
           <!-- <div class="komento-folder">
@@ -49,12 +59,30 @@
 
           <div class="komento-folder">
           <%= f.label :学校の良いところ, style: { 'margin-right' => 8 } %>
-          <%= f.text_area :good, placeholder: 'コメントは最低２０文字以上入力をお願いします。', class: "komento-good" %>
+          <%= f.text_area :good, placeholder: '２０文字以上入力をお願いします。', class: "komento-good", onkeyup: "ShowLength(value);" %>
+          <p id="inputlength" class="input-p">0文字(20文字以上入力してください。）</p>
+    <% if @review.errors.any? %>
+    <li class="keikoku-li">
+    <p class="keikoku-p">
+    <%= @review.errors.messages[:good][0] %>
+    </p>
+    <%= @review.errors.messages[:good][1] %>
+    </li>
+    <% end %>
           </div>
 
           <div class="komento-folder">
           <%= f.label :改善して欲しい・気になったところ, style: { 'margin-right' => 8 } %>
-          <%= f.text_area :bad, placeholder: 'コメントは最低２０文字以上入力をお願いします。', class: "komento-good" %>
+          <%= f.text_area :bad, placeholder: '２０文字以上入力をお願いします。', class: "komento-good", onkeyup: "ShowLength2(value);" %>
+          <p id="inputlength2" class="input-p">0文字(20文字以上入力してください。）</p>
+    <% if @review.errors.any? %>
+    <li class="keikoku-li">
+    <p class="keikoku-p">
+    <%= @review.errors.messages[:bad][0] %>
+    </p>
+    <%= @review.errors.messages[:bad][1] %>
+    </li>
+    <% end %>
           </div>
 
           <div class="row">
