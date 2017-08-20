@@ -16,7 +16,6 @@ if @review.save
     # Review.create(create_params)
 else
     render :new
-@drone = School.find(params[:school_id])
 
 end
     PostMailer.post_mail(create_params[:nickname],create_params[:rate],create_params[:good],create_params[:bad]).deliver
