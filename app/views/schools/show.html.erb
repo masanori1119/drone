@@ -24,7 +24,7 @@
       </tr>
        <tr>
           <th scope="row">講座（税込）</th>
-          <td><%= @drone.curriculum %></td>
+          <td><%= simple_format(@drone.curriculum) %></td>
       </tr>
       <tr>
           <th scope="row">認可組織</th>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
           <th scope="row">特徴</th>
-          <td><%= @drone.point %></td>
+          <td><%= simple_format(@drone.point) %></td>
       </tr>
       <tr>
           <th scope="row">ホームページ</th>
