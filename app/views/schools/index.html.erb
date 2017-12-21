@@ -77,9 +77,9 @@
          <h5 class="ranking-title"><%= review.school.name %></h5></a>
           <span class="toukoubi">投稿日：<%= review.created_at.strftime("%Y年%m月%d日 %H時%M分") %></span>
 
-          <p class="toukousya">投稿者：</span><span><%= review.nickname %></p>
+          <p class="toukousya">投稿者：<%= review.nickname %></p>
 
-          <span class="hyouka">評　価：</span><span class="wrap"><i class="rate rate<%= review.rate.round %>"></i></span><span class="kutikomi-hyouka"><%= review.rate.round %> 点</span>
+          <span class="hyouka">評 価：</span><span class="wrap"><i class="rate rate<%= review.rate.round %>"></i></span><span class="kutikomi-hyouka"><%= review.rate.round %> 点</span>
        </li>
     <% end %>
 </ul>
@@ -94,20 +94,20 @@
     <h3 class="ranking-tuzuki"><a class="ranking" href="/schools/ranking">ランキングの続きをみる</a></h3>
 
 
-        <ul class ="ul-ranking2" style="list-style:none;"> 
+        <ul class ="ul-ranking2" style="list-style:none;">
             <% @ranking.each.with_index(1) do |school, i| %>
           <li class="li-ranking">
           <a href="/schools/<%= school.id %>" class="p-link">
                 <img src="/assets/drone/<%= school.image %>" width="200" class="ranking-gazo">
-                <h5 class="ranking-title2"><%= school.name %><h5></a>
+                <h5 class="ranking-title2"><%= school.name %></h5></a>
 
 <!-- 以下、平均点表示 -->
      <% if school.reviews.present? %>
-       <li class="ranking-star">
+       <p class="ranking-star">
               <span class="wrap">
               <i class="rate rate<%= school.reviews.where(public: true).average(:rate).round %>"></i></span>
               <span class="ranking-ten"><%= school.reviews.where(public: true).average(:rate).round(1) %>点 </span>
-       </li>
+       </p>
                 <p class="ranking-kutikomi">口コミ：<%=  school.reviews.where(public: true).length %>件</p>
      <% else %>
                 <span class="wrap"><i class="rate rate0"></i></span>
@@ -125,49 +125,49 @@
     <li class="li-tiiki">
         <h5 class="tiiki-moji">
         <%= link_to "北海道", "/schools/zenkoku#page_hokkaido" %>
-        <p class="ranking-kutikomi">学校数：<%= @hokkaido %>件</h5></p>
+        <p class="ranking-kutikomi">学校数：<%= @hokkaido %>件</p></h5>
     </li>
 
     <li class="li-tiiki">
         <h5 class="tiiki-moji">
         <%= link_to "東北", "/schools/zenkoku#page_touhoku" %>
-        <p class="ranking-kutikomi">学校数：<%= @touhoku %>件</h5></p>
+        <p class="ranking-kutikomi">学校数：<%= @touhoku %>件</p></h5>
     </li>
 
     <li class="li-tiiki">
         <h5 class="tiiki-moji">
         <%= link_to "関東", "/schools/zenkoku#page_kanto" %>
-        <p class="ranking-kutikomi">学校数：<%= @kanto %>件</h5></p>
+        <p class="ranking-kutikomi">学校数：<%= @kanto %>件</p></h5>
     </li>
 
     <li class="li-tiiki">
         <h5 class="tiiki-moji">
         <%= link_to "中部", "/schools/zenkoku#page_tyubu" %>
-        <p class="ranking-kutikomi">学校数：<%= @chubu %>件</h5></p>
+        <p class="ranking-kutikomi">学校数：<%= @chubu %>件</p></h5>
     </li>
 
     <li class="li-tiiki">
         <h5 class="tiiki-moji">
         <%= link_to "近畿", "/schools/zenkoku#page_kinki" %>
-        <p class="ranking-kutikomi">学校数：<%= @kinki %>件</h5></p>
+        <p class="ranking-kutikomi">学校数：<%= @kinki %>件</p></h5>
     </li>
 
     <li class="li-tiiki">
         <h5 class="tiiki-moji">
         <%= link_to "中国地方", "/schools/zenkoku#page_tyugoku" %>
-        <p class="ranking-kutikomi">学校数：<%= @chugoku %>件</h5></p>
+        <p class="ranking-kutikomi">学校数：<%= @chugoku %>件</p></h5>
     </li>
 
     <li class="li-tiiki">
         <h5 class="tiiki-moji">
         <%= link_to "四国", "/schools/zenkoku#page_shikoku" %>
-        <p class="ranking-kutikomi">学校数：<%= @shikoku %>件</h5></p>
+        <p class="ranking-kutikomi">学校数：<%= @shikoku %>件</p></h5>
     </li>
 
     <li class="li-tiiki">
         <h5 class="tiiki-moji">
         <%= link_to "九州・沖縄", "/schools/zenkoku#page_kyusyu" %>
-        <p class="ranking-kutikomi">学校数：<%= @kyusyu %>件</h5></p>
+        <p class="ranking-kutikomi">学校数：<%= @kyusyu %>件</p></h5>
     </li>
  </ul>
 </div>
@@ -179,31 +179,31 @@
 
 <ul class ="ul-ranking4" style="list-style:none;">
     <li class="li-tiiki">
-    <a class="irokotei" href="/schools/license"><h5 class="tiiki-moji">操縦<h5></a>
+    <a class="irokotei" href="/schools/license"><h5 class="tiiki-moji">操縦</h5></a>
     <p class="ranking-kutikomi">学校数：<%= @sousa %>件</p>
     </li>
 
     <li class="li-tiiki">
     <a class="irokotei" href="/schools/license_2">
-    <h5 class="tiiki-moji">運行管理<h5></a>
+    <h5 class="tiiki-moji">運行管理</h5></a>
     <p class="ranking-kutikomi">学校数：<%= @kanri %>件</p>
     </li>
 
     <li class="li-tiiki">
     <a class="irokotei" href="/schools/license_3">
-    <h5 class="tiiki-moji">空撮<h5></a>
+    <h5 class="tiiki-moji">空撮</h5></a>
     <p class="ranking-kutikomi">学校数：<%= @kuusatsu %>件</p>
     </li>
 
     <li class="li-tiiki">
     <a class="irokotei" href="/schools/license_4">
-    <h5 class="tiiki-moji">測量<h5></a>
+    <h5 class="tiiki-moji">測量</h5></a>
     <p class="ranking-kutikomi">学校数：<%= @sokuryou %>件</p>
     </li>
 
     <li class="li-tiiki">
     <a class="irokotei" href="/schools/license_5">
-    <h5 class="tiiki-moji">農業<h5></a>
+    <h5 class="tiiki-moji">農業</h5></a>
     <p class="ranking-kutikomi">学校数：<%= @nougyou %>件</p>
     </li>
 
