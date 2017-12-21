@@ -55,6 +55,11 @@ gem 'cancancan'
 gem 'rails_admin'
 gem 'dotenv-rails'
 gem 'google-analytics-rails'
+gem 'meta-tags'
+gem "sitemap_generator"
+
+gem 'aws-sdk', '~> 2.3.0'
+
 
 group :production do
   gem 'rails_12factor'
